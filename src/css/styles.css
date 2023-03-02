@@ -9,9 +9,9 @@
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./footer.css');
-@import url('./hotel.css');
-@import url('./restauran.css');
-@import url('./room.css');
+@import url('./page-2.css');
+@import url('./page-3.css');
+@import url('./page-4.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
