@@ -1,0 +1,62 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+
+/* utils (змінні частини - плейсхолдери і т.д)*/
+@import url('../utils/styles.css');
+
+/* base.css (базові властивості що поширюються на всю сторінку*/
+@import url('../css/base/reset.css');
+@import url('../css/base/common.css');
+
+/* components (не змінні частини що можуть використовуватись будь-де без змін) (кнопки, контейнери)*/
+@import url('../components/container.css');
+
+
+/* layout (розмітка-секцій)*/
+@import url('../layout/header.css');
+/* main-page */
+@import url('../layout/home/hero.css');
+@import url('../layout/home/restaurant-hotel-complex.css');
+@import url('../layout/home/business-class-hotel.css');
+@import url('../layout/home/about-restauran.css');
+@import url('../layout/home/welcom-hotel.css');
+@import url('../layout/home/about-hotel.css');
+@import url('../layout/home/location.css');
+/* hotel */
+@import url('../layout/hotel/hero-hotel.css');
+@import url('../layout/hotel/double-luxe-room.css');
+@import url('../layout/hotel/triple-room.css');
+@import url('../layout/hotel/four-seater-room.css');
+/* restauran */
+@import url('../layout/restauran/hero-restauran.css');
+@import url('../layout/restauran/about-restauran.css');
+@import url('../layout/restauran/menu.css');
+/* room */
+@import url('../layout/room/room-hero.css');
+@import url('../layout/room/room-benefits.css');
+/* footer */
+@import url('../layout/footer.css');
+
+/* pages (сторінки)*/
+@import url('../pages/index.css');
+@import url('../pages/hotel.css');
+@import url('../pages/restauran.css');
+@import url('../pages/room.css');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1,29;
+  font-weight: 400;
+
+  --primary-text-color: #121212;
+  --secondary-text-color: #F6F6F6;
+  --primary-background-color:#D8D8D8;
+  --secondary-background-color: #121212;
+  --white-base: #FFFFFF;
+}

@@ -33,16 +33,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-.section{
-  padding-bottom: 64px;
-}
-
-@media screen and (min-width:768px) {
-  .section{
-    padding-bottom: 80px;}
-  }
-  @media screen and (min-width:1140px) {
-    .section{
-      padding-bottom: 100px;}
-    }
