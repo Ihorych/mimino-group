@@ -11,6 +11,7 @@
 
 /* components (не змінні частини що можуть використовуватись будь-де без змін) (кнопки, контейнери)*/
 @import url('../components/container.css');
+@import url('../components/vusually_hidden.css');
 
 /* layout (розмітка-секцій)*/
 @import url('../layout/header.css');
