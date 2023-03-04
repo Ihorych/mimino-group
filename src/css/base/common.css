@@ -1,5 +1,6 @@
+
 body {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -9,15 +10,25 @@ body {
   color: var(--primary-text-color);
 }
 
-.section{
-    padding-bottom: 64px;
+:root {
+  --primary-text-color: #121212;
+  --secondary-text-color: #f6f6f6;
+  --primary-background-color: #d8d8d8;
+  --secondary-background-color: #121212;
+  --white-base: #ffffff;
+}
+
+.section {
+  padding-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 80px;
   }
-  
-  @media screen and (min-width:768px) {
-    .section{
-      padding-bottom: 80px;}
-    }
-    @media screen and (min-width:1140px) {
-      .section{
-        padding-bottom: 100px;}
-      }
+}
+@media screen and (min-width: 1140px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}

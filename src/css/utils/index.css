@@ -5,24 +5,18 @@
   |============================
 */
 
-
 /* utils (змінні частини - плейсхолдери і т.д)*/
-@import url('../utils/styles.css');
-
-/* base.css (базові властивості що поширюються на всю сторінку*/
-@import url('../css/base/reset.css');
-@import url('../css/base/common.css');
+@import url('../base/common.css');
+@import url('../base/reset.css');
 
 /* components (не змінні частини що можуть використовуватись будь-де без змін) (кнопки, контейнери)*/
 @import url('../components/container.css');
-
 
 /* layout (розмітка-секцій)*/
 @import url('../layout/header.css');
 /* main-page */
 @import url('../layout/home/hero.css');
-@import url('../layout/home/restaurant-hotel-complex.css');
-@import url('../layout/home/business-class-hotel.css');
+@import url('../layout/home/about-a-complex.css');
 @import url('../layout/home/about-restauran.css');
 @import url('../layout/home/welcom-hotel.css');
 @import url('../layout/home/about-hotel.css');
@@ -47,16 +41,3 @@
 @import url('../pages/hotel.css');
 @import url('../pages/restauran.css');
 @import url('../pages/room.css');
-
-:root {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1,29;
-  font-weight: 400;
-
-  --primary-text-color: #121212;
-  --secondary-text-color: #F6F6F6;
-  --primary-background-color:#D8D8D8;
-  --secondary-background-color: #121212;
-  --white-base: #FFFFFF;
-}
