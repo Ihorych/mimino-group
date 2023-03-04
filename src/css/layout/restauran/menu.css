@@ -1,10 +1,4 @@
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
-.section {
+.price-menu {
   background-color: var(--secondary-background-color);
 }
 
@@ -50,7 +44,7 @@
   display: flex;
   font-size: 12px;
   font-weight: 400;
-  color: rgba(216, 215, 215, 0.5);
+  color: var(--restauran-menu-text);
   margin-bottom: 14px;
 }
 
