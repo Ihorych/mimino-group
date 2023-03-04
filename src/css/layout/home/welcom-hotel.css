@@ -1,0 +1,63 @@
+.container-main-page-welcome {padding-bottom: 64px;}
+
+.title-main-page-welcome {
+    max-width: 335px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+.title-main-page-welcome-ital {
+    font-style: italic;
+}
+.title-main-page-welcome {margin-bottom: 32px;}
+
+.text-main-page-welcome.hotel {max-width: 306px;
+}
+.text-main-page-welcome.room {max-width: 335px;
+}
+.text-main-page-welcome {color: #000000;}
+
+.descr-main-page-welcome {margin-bottom: 32px;}
+
+.list-main-page-welcome {display: flex;
+flex-direction: column;
+gap: 32px;}
+
+ @media screen and (min-width:768px) {
+.container-main-page-welcome {padding-bottom: 80px;}
+.list-main-page-welcome {display: flex;
+flex-direction: row;
+}
+.text-main-page-welcome.room {max-width: 367px;}
+
+ .title-main-page-welcome {
+    max-width: 434px;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #000000;
+}
+.title-main-page-welcome {margin-bottom: 50px;}
+
+.descr-main-page-welcome {margin-bottom: 40px;}
+
+}
+
+@media screen and (min-width:1440px) {
+    .container-main-page-welcome {padding-bottom: 100px;}
+      
+    .container-main-page-welcome {display: flex;
+    flex-direction: row-reverse;
+justify-content: flex-end;
+gap: 32px;}
+.text-main-page-welcome.hotel {max-width: 437px;
+}
+.text-main-page-welcome.room {max-width: 437px;
+}
+.list-main-page-welcome {flex-direction: column};
+.title-main-page-welcome {margin-bottom: 310px;}
+
+}
+
+
