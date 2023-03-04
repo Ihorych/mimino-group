@@ -1,0 +1,175 @@
+/* ========================================GLOBAL */
+.section-title {
+  margin-top: 32px;
+  margin-bottom: 32px;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section-title {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+/* Загальні стилі для кнопок */
+.general-list-btn {
+  display: flex;
+  gap: 12px;
+}
+.light-theme-btn {
+  display: block;
+  padding: 8px 18px;
+
+  line-height: 1.15;
+  text-transform: inherit;
+  text-align: center;
+  border: 0.8px solid var(--primary-text-color);
+  border-radius: 32px;
+
+  background-color: transparent;
+  transition: color linear 250ms, background-color linear 250ms;
+}
+.light-theme-btn:hover,
+.light-theme-btn:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .general-list-btn {
+    gap: 14px;
+  }
+  .light-theme-btn {
+    line-height: 1.71;
+    padding: 8px 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .light-theme-btn {
+    padding: 9px 24px;
+
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+/* =====================================================/ GLOBAL */
+/* ======================================================SECTION ONE */
+@media screen and (max-width: 767px) {
+  .luxury-list-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .luxury-item-img:first-child {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .luxury-item-img:nth-last-child(-n + 2) {
+    flex-direction: row;
+    width: 47%;
+    height: auto;
+  }
+  .luxury-item-img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .luxury-list-img {
+    position: relative;
+    display: flex;
+    justify-content: end;
+  }
+  .luxury-item-img:first-child {
+    order: 3;
+    width: 47%;
+  }
+  .luxury-item-img:nth-child(2) {
+    position: absolute;
+    align-self: end;
+    bottom: 0;
+    left: 0;
+    width: 48%;
+  }
+  .luxury-item-img:last-child {
+    margin-right: 32px;
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .luxury-list-img {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .luxury-item-img:last-child {
+    order: -1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .luxury-title {
+    max-width: 238px;
+  }
+  .luxury-text-wrapper {
+    margin-bottom: 24px;
+  }
+  .one-part-text {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .luxury-text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    margin-bottom: 40px;
+  }
+  .one-part-text {
+    flex-basis: 369px;
+  }
+  .two-part-text {
+    flex-basis: 299px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .luxury-text-wrapper {
+    margin-bottom: 0;
+    max-width: 686px;
+  }
+  .one-part-text {
+    flex-basis: 355px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .luxury-item-btn {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .box-bottom-part {
+    position: relative;
+  }
+  .luxury-btn-wrapper {
+    position: absolute;
+    min-width: 333px;
+    top: 0;
+    right: 0;
+  }
+}
+/* ======================================================/ SECTION ONE */
