@@ -42,6 +42,9 @@
 /* footer */
 @import url('../layout/footer.css');
 
+@import url('../layout/modal.css');
+@import url('../layout/mobile-menu.css');
+
 /* pages (сторінки)*/
 @import url('../pages/index.css');
 @import url('../pages/hotel.css');
