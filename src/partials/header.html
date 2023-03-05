@@ -1,17 +1,55 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./hotel.html" class="nav-link">Hotel</a>
-      </li>
+  <div class="header-container container">
+    <button
+      class="menu-toggle js-open-menu"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <svg class="header-icon" width="28" height="28">
+        <use href="/src/img/icons/icons.svg.svg#icon-icon"></use>
+      </svg>
+    </button>
+    <nav class="header-nav">
+      <ul class="header-list list">
+        <li>
+          <a href="./home.html" class="nav-link current link">Home</a>
+        </li>
+        <li>
+          <a href="./hotel.html" class="nav-link link">Hotel</a>
+        </li>
+        <li>
+          <a href="./restauran.html" class="nav-link link">Restaurant</a>
+        </li>
+      </ul>
+    </nav>
 
-      <li class="nav-item">
-        <a href="./restauran.html" class="nav-link">Restauran</a>
-      </li>
+    <a href="./home.html" class="logo link">
+      <h2 class="logo-title">Mimino</h2>
+      <p class="logo-text">restaurant-hotel complex</p>
+    </a>
 
-      <li class="nav-item">
-        <a href="./room.html" class="nav-link">Room</a>
+    <ul class="social-list mobile-list list">
+      <li class="social-item">
+        <a class="social-link link" href>
+          <svg class="social-icon" width="24" height="24">
+            <use href="/src/img/icons/icons.svg.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link link" href>
+          <svg class="social-icon" width="24" height="24">
+            <use href="/src/img/icons/icons.svg.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link link" href>
+          <svg class="social-icon" width="24" height="24">
+            <use href="/src/img/icons/icons.svg.svg#icon-twitter"></use>
+          </svg>
+        </a>
       </li>
     </ul>
-  </nav>
+  </div>
 </header>
