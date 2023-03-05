@@ -12,11 +12,12 @@ body {
 :root {
   --primary-text-color: #121212;
   --secondary-text-color: #f6f6f6;
-  --primary-background-color: #d8d8d8;
+  --primary-background-color: #f7f7f7;
   --secondary-background-color: #121212;
   --white-base: #ffffff;
   --restauran-menu-text: rgba(216, 215, 215, 0.5);
   --line-color-menu: rgba(255, 255, 255, 0.5);
+  --about-subtitle-color: #484848;
 }
 
 .section {
