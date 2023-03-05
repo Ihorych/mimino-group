@@ -131,7 +131,7 @@
     font-size: 12px;
     line-height: 1.17em;
     letter-spacing: 0.18em;
-    color: #484848;
+    color: var(--about-subtitle-color);
 }
 
 .about-text {
