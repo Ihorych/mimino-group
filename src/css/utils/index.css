@@ -15,6 +15,11 @@
 
 /* layout (розмітка-секцій)*/
 @import url('../layout/header.css');
+@import url('../layout/header/header-hotel.css');
+@import url('../layout/header/header-restauran.css');
+@import url('../layout/header/header-room.css');
+
+
 /* main-page */
 @import url('../layout/home/hero.css');
 @import url('../layout/home/about-a-complex.css');
