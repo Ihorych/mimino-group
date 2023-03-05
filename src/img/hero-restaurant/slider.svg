@@ -1,0 +1,13 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<!-- <symbol id="slider-rigth" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 15L0.999999 8L8 0.999999" stroke="#121212" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol> -->
+<symbol id="slider-left" viewBox="0 0 18 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M16 30l-14-14 14-14"></path>
+</symbol>
+<symbol id="slider-rigth" viewBox="0 0 18 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 30l14-14-14-14"></path>
+</symbol>
+</defs>
+</svg>
