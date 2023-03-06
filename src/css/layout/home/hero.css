@@ -17,7 +17,7 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .main-hero-sectrion {
-    height: 710px;
+    height: 770px;
     padding-bottom: 48px;
   }
 }
@@ -80,7 +80,7 @@ body {
   .main-overlay {
     min-height: 770px;
     background-image: url(../../../img/main-page-hero/desktop-background-img@1x.jpg);
-    top: -61px;
+    top: 0;
     left: 100%;
     transform: translate(-100%, 0);
   }
@@ -107,7 +107,7 @@ body {
   .main-hero-title {
     text-align: left;
     margin-left: 32px;
-    margin-top: 196px;
+    margin-top: 274px;
     margin-bottom: 196px;
   }
 }
