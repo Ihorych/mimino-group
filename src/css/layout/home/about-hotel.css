@@ -1,3 +1,18 @@
+.location-section {
+  padding-top: 64px;
+}
+@media screen and (min-width: 768px) {
+  .location-section {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .location-section {
+    padding-top: 100px;
+  }
+}
+
 .about-hotel-section {
   background: var(--secondary-background-color);
 }
@@ -118,6 +133,12 @@
     gap: 28px;
   }
 }
+@media screen and (max-width: 767px) {
+  .about-hotel-right-gallary {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .about-hotel-btn-list {
     position: absolute;
