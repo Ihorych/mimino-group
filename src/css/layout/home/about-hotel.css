@@ -1,5 +1,5 @@
 .about-hotel-section {
-  background: #121212;
+  background: var(--secondary-background-color);
 }
 
 @media screen and (min-width: 1440px) {
@@ -43,12 +43,10 @@
 }
 
 .about-hotel-title {
-  font-family: 'DM Sans';
   font-weight: 500;
   font-size: 40px;
   line-height: 1;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
   color: #f7f7f7;
 }
 
@@ -58,13 +56,9 @@
   }
 }
 .about-hotel-txt {
-  font-size: 14px;
   line-height: calc(18 / 14);
-  font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
   color: #f7f7f7;
 }
 @media screen and (min-width: 768px) {
@@ -96,7 +90,7 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -132,24 +126,19 @@
   }
 }
 
-@media screen and (max-width: 1439px) {
-}
 .about-hotel-btn-list {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 14px;
 }
+
 .about-hotel-btn {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   text-transform: uppercase;
   background-color: transparent;
-  color: #f7f7f7;
+  color: var(--primary-background-color);
   padding: 9px 24px;
   /* min-width: 114px; */
   border: 0.8px solid #f7f7f7;
@@ -159,7 +148,6 @@
 
 @media screen and (min-width: 768px) {
   .about-hotel-btn {
-    font-size: 14px;
     line-height: calc(24 / 14);
     min-width: 143px;
   }
@@ -174,6 +162,6 @@
 }
 .about-hotel-btn:hover,
 .about-hotel-btn:focus {
-  color: #121212;
-  background-color: #ffffff;
+  color: var(--primary-text-color);
+  background-color: var(--white-base);
 }

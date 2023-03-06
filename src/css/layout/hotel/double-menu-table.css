@@ -1,0 +1,154 @@
+.menu-table {
+    padding: 40px 0 64px 0;
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+
+    text-align: center;
+}
+
+
+.room-menu-title {
+    margin-bottom: 28px;
+
+    font-size: 28px;
+    line-height: calc(32 / 28);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.room-menu-text {
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+.room-menu-list {
+    text-align: start;
+}
+/* .room-menu-list {
+    margin-bottom: 40px;
+} */
+
+/* .room-menu-list:nth-last-child(:last-child){
+    margin-bottom: 64px;
+} */
+
+.room-menu-item {
+    margin-bottom: 40px;
+}
+
+.room-menu-item:last-child{
+    margin-bottom: 64px;
+}
+
+.room-menu-text-list {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.room-menu-bath-img {
+    margin-left: auto;
+}
+
+.room-menu-bath-img-wrapper {
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.room-menu-cosmetic-img {
+    position: absolute;
+    top: 144px;
+    left: 0;
+}
+
+.room-menu-btn {
+    padding: 8px 40px;
+
+    border: 0.8px solid #F7F7F7;
+    border-radius: 32px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: var(--primary-background-color);
+    background-color: transparent;
+
+}
+
+/* TABLET-STYLE */
+@media screen and (min-width:768px) {
+    .menu-table {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .room-menu-title {
+        font-size: 40px;
+        line-height: calc(44 / 40);
+
+        margin-bottom: 40px;
+    }
+    .room-menu-text {
+        font-size: 18px;
+        line-height: calc(24 / 18);
+    }
+    .room-menu-item:last-child{
+        margin-bottom: 122px;
+    }
+    .room-menu-cosmetic-img {
+        top: 157px;
+    }
+    .room-menu-btn{
+        padding: 8px 24px;
+        position: absolute;
+        bottom: 114px;
+        left: 0;
+    }
+    .room-wrapper {
+        position: relative;
+    }
+}
+
+/* DESCTOP-STYLE */
+@media screen and (min-width:1440px) {
+    .menu-table {
+        padding: 94px 0 100px 0;
+    }
+    .room-menu-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .room-menu-item:first-child{
+        width: 633px;
+        margin-right: 70px;
+    }
+    .room-menu-item:nth-child(3n){
+        width: 473px;
+        margin-right: 230px;
+    }
+    .room-menu-item {
+        margin-bottom: 100px;
+    }
+    .room-menu-item:last-child{
+        margin-bottom: 0px;
+    }
+    .room-menu-cosmetic-img {
+        position: absolute;
+        top: 208px;
+        left: 560px;
+    }
+    .room-menu-btn {
+        left: 560px;
+        bottom: 136px;
+    }
+    .room-wrapper {
+        transform: translateY(-120px);
+        margin-bottom: -120px;
+    }
+    .room-menu-bath-img-wrapper {
+        margin-bottom: 0px;
+    }
+}

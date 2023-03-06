@@ -1,0 +1,251 @@
+.section.about-section {
+    background-color: var(--primary-background-color);
+    padding-top: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .section.about-section {
+    padding-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section.about-section {
+    padding-top: 100px;
+    }
+}
+
+.about-item {
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-item {
+        position: relative;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-item {
+        display: flex;
+        gap: 364px;
+        margin-bottom: 100px;
+    }
+}
+
+.about-first-thumb {
+    max-width: 335px;
+    height: 442px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-first-thumb {
+        max-width: 482px;
+        height: 636px;
+        margin-bottom: 32px;
+    }
+}
+
+.about-second-thumb {
+    position: relative;
+    max-width: 282px;
+    height: 153px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-second-thumb {
+        position: absolute;
+        max-width: 404px;
+        height: 219px;
+        top: 209px;
+        left: 300px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-second-thumb {
+        max-width: 439px;
+    }
+}
+
+.rating-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 14px;
+    padding-right: 67px;
+    position: absolute;
+    width: 212px;
+    height: 61px;
+    bottom: 134px;
+    left: 123px;
+    background-color: var(--secondary-background-color);
+    box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+    .rating-box {
+        bottom: 191px;
+        left: 70px;
+    }
+}
+
+.client-name {
+    font-weight: 500;
+    line-height: 1em;
+    text-transform: none;
+    color: #F7F7F7;
+    margin-bottom: 7px;
+}
+
+.rating-score {
+    font-size: 12px;
+    line-height: 1.33em;
+    color: #F7F7F7;
+}
+
+.give-rating {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33em;
+    color: #575757;
+    text-transform: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .about-restaurant-wrapper {
+        padding-top: 199px;
+        padding-bottom: 223px;
+    }
+}
+
+.about-subtitle {   
+    margin-bottom: 18px; 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17em;
+    letter-spacing: 0.18em;
+    color: var(--about-subtitle-color);
+}
+
+.about-text {
+    margin-bottom: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 768px) {
+    .about-text {
+        font-size: 18px;
+        line-height: 1.33em;
+        width: 472px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-business-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 87px;
+    }
+}
+
+.about-third-thumb {
+    position: relative;
+    max-width: 335px;
+    height: 311px;
+    margin-bottom: 54px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-third-thumb {
+        max-width: 530px;
+        height: 492px;
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-third-thumb {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-flex-business {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-flex-business {
+    gap: 54px;
+    padding-top: 127px;
+    padding-bottom: 56px;
+    }
+}
+
+.rating-box-second {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 14px;
+    padding-right: 67px;
+    position: absolute;
+    width: 212px;
+    height: 61px;
+    bottom: -22px;
+    left: 0;
+    background-color: var(--secondary-background-color);
+    box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+    .rating-box-second {
+        bottom: 128px;
+        left: -105px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-text.about-business-text {
+        font-size: 14px;
+    }
+}
+
+.about-business-text {
+    margin-bottom: 40px;
+    width: 263px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-business-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    }
+}
+
+.about-fourth-thumb {
+    max-width: 335px;
+    height: 309px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-fourth-thumb {
+        max-width: 266px;
+        height: 309px;
+    }
+}

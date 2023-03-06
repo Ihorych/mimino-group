@@ -1,0 +1,134 @@
+.room-type {
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.room-photo-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.room-photo-block {
+    display: flex;
+    gap: 20px;
+}
+
+.room-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.room-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: calc(40/32);
+}
+
+.room-desc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.room-desc {
+    max-width: 335px;
+}
+
+.room-button-list {
+    display: flex;
+    gap: 14px;
+
+}
+
+.room-button {
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+    padding: 18px;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.room-button-link {
+    display: block;
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+    padding: 18px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@media screen and (min-width:320px) and (max-width:375px) {
+
+    .room-photo,
+    .room-photo-list {
+        max-width: 100%;
+    }
+
+    .room-desk-text {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .room-photo-list {
+        gap: 32px;
+        margin-bottom: 40px;
+        width: 704px;
+    }
+
+    .room-type {
+        width: 704px;
+    }
+
+    .room-photo-block {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .room-desc-list {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    .room-desc {
+        width: 355px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .room-type {
+        width: 1376px;
+    }
+
+    .room-photo-list {
+        width: 1376px;
+        align-items: center;
+    }
+
+    .room-photo-block {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .room-desc-list {
+        align-items: top;
+        margin-bottom: 50px;
+    }
+
+    .room-desc-block {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+}

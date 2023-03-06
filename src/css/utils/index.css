@@ -15,6 +15,11 @@
 
 /* layout (розмітка-секцій)*/
 @import url('../layout/header.css');
+@import url('../layout/header/header-hotel.css');
+@import url('../layout/header/header-restauran.css');
+@import url('../layout/header/header-room.css');
+
+
 /* main-page */
 @import url('../layout/home/hero.css');
 @import url('../layout/home/about-a-complex.css');
@@ -25,6 +30,7 @@
 /* hotel */
 @import url('../layout/hotel/hero-hotel.css');
 @import url('../layout/hotel/double-luxe-room.css');
+@import url('../layout/hotel/double-menu-table.css');
 @import url('../layout/hotel/triple-room.css');
 @import url('../layout/hotel/four-seater-room.css');
 /* restauran */
@@ -36,6 +42,9 @@
 @import url('../layout/room/room-benefits.css');
 /* footer */
 @import url('../layout/footer.css');
+
+@import url('../layout/modal.css');
+@import url('../layout/mobile-menu.css');
 
 /* pages (сторінки)*/
 @import url('../pages/index.css');
