@@ -1,21 +1,7 @@
 .overflow {
   overflow: hidden;
 }
-.title-hero {
-  padding-top: 40px;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: var(--primary-text-color);
-  margin-bottom: 24px;
-}
-@media screen and (max-width: 1440px) {
-  .desc-container_hidden {
-    display: none;
-  }
-}
+
 @media screen and (min-width: 1440px) {
   .desc-container_flex {
     display: flex;
@@ -186,7 +172,7 @@
 }
 @media screen and (min-width: 1440px) {
   .images-hero_item {
-    right: -130%;
+    right: -117%;
   }
 }
 .hero_text {
