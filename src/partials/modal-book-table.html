@@ -1,0 +1,39 @@
+<section>
+    <div class="modal book-table">
+        <button class="modal-close-btn" type="button" >
+            <svg class="modal-close-btn-icon">
+                <use href=""></use>
+            </svg>
+        </button>
+        <h4 class="call-to-action">BOOK <span class="ital">A TABLE</span></h4>
+        <form>
+            <div class="modal-form-wrapper">
+                <label class="modal-form-field">
+                    <input type="text" name="user_name" class="modal-form-input" pattern="^[a-zA-Zа-яА-Я]+$" minlength="2"
+                        placeholder="Your name *" title="Name should only contain letters" required>
+                    <span class="modal-form-input-desc">who should book a table for?</span>           
+                </label>
+                
+                
+                <label class="modal-form-field">
+                    <input type="number" name="user_quantity" class="modal-form-input" value="" min="1" max="50" placeholder="number of people *" required>
+                    <span class="modal-form-input-desc">number of people</span>
+                </label>
+                
+                
+                <label class="modal-form-field date">
+                    <input type="date" name="user_date" class="modal-form-input" min="2023-03-01" max="2023-10-30" required>
+                    <span class="modal-form-input-desc">what date to book?</span>
+                </label>
+                
+                <label class="modal-form-field">
+                    <input id="online_phone-two" type="tel" name="user_tel" class="modal-form-input" value="+38 ()"
+                        pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+38 (___) ___-__-__" title="Phone number should be like +38 (0xx) xxx-xx-xx" required>
+                    <span class="modal-form-input-desc">phone number</span>
+                </label>
+            </div>
+            <button class="btn btn-dark-bg" type="submit">MAKE A RESERVATION</button>
+        </form>
+    </div>
+    <div class="overlay"></div>
+</section>
