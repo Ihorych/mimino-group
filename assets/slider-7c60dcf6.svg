@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0">
+<symbol id="slider-rigth" viewBox="0 0 7 12" fill="none">
+<path d="M1.33138 10.6681L5.99805 6.00143L1.33138 1.33476" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="slider-left" viewBox="0 0 7 12" fill="none">
+<path d="M5.66569 10.6669L0.999023 6.0002L5.66569 1.33353" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+</svg>
