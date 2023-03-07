@@ -7,10 +7,17 @@
     <title>Hero</title>
 
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,10 +30,81 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/mimino-group/assets/index-fddbe830.js"></script>
-    <link rel="stylesheet" href="/mimino-group/assets/index-6b500930.css">
+    <script type="module" crossorigin src="/mimino-group/assets/index-5d114bf7.js"></script>
+    <link rel="stylesheet" href="/mimino-group/assets/index-fd1e4121.css">
   </head>
   <body>
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="modal-content">
+      <p class="modal-tittle">BOOK A TABLE</p>
+      <form class="input-list">
+        <div class="wrapper">
+          <div class="relative">
+            <label class="modal-input">
+              <input
+                type="text"
+                name="username"
+                placeholder="YOUR NAME"
+                class="placeholder-style"
+              />
+              <span>Who should book a table for?</span>
+            </label>
+          </div>
+
+          <div class="relative">
+            <label for="size" class="modal-input"></label>
+            <select id="number" name="number" class="placeholder-style">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="relative">
+            <label for="fav" class="modal-input"></label>
+            <select id="day" name="number" class="placeholder-style">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+            <span class="undertitle">What date to book?</span>
+          </div>
+
+          <div class="relative">
+            <label class="modal-input">
+              <span class="">phone number</span>
+              <input
+                id="online_phone-two"
+                type="tel"
+                name="user_tel"
+                class="placeholder-style"
+                value="+38 (0)"
+                pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                placeholder="+38 ()___-__-__"
+                title="Phone number should be like +38 (098) xxx-xx-xx"
+                required
+              />
+            </label>
+            <span class="undertitle">phone number</span>
+          </div>
+        </div>
+        <div class="modal-buttom">
+          <button type="submit" class="button-secondary" data-modal-close>
+            Make a reservation
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+    
     <header class="header">
   <div class="header-container container">
     <button
@@ -210,32 +288,32 @@
 
 
     <section class="main-hero-sectrion">
-    <h1 class="main-hero-title">
-        mimino
-    </h1>
-    <ul class="main-button-list">
-        <li class="button-list-item">
-            <button class="button-secondary">book a room</button>
-        </li>
-        <li class="button-list-item">
-            <button class="button-secondary">book a table</button>
-        </li>
-    </ul>
-    <ul class="main-text-list container">
-        <li class="main-text-list-item">
-            <p class="text">Whether you're in the mood for a hearty breakfast, a light lunch, <i>or a romantic
-                    dinner</i>, our
-                menu has something for
-                everyone.</p>
-        </li>
-        <li class="main-text-list-item">
-            <p class="text">At Hotel Mimino, we believe that great food should be available to everyone, no matter the
-                time of day.</p>
-        </li>
-    </ul>
-    <div class="main-overlay">
-    </div>
+  <h1 class="main-hero-title">mimino</h1>
+  <ul class="main-button-list">
+    <li class="button-list-item">
+      <button class="button-secondary" data-modal-open>book a room</button>
+    </li>
+    <li class="button-list-item">
+      <button class="button-secondary">book a table</button>
+    </li>
+  </ul>
+  <ul class="main-text-list container">
+    <li class="main-text-list-item">
+      <p class="text">
+        Whether you're in the mood for a hearty breakfast, a light lunch,
+        <i>or a romantic dinner</i>, our menu has something for everyone.
+      </p>
+    </li>
+    <li class="main-text-list-item">
+      <p class="text">
+        At Hotel Mimino, we believe that great food should be available to
+        everyone, no matter the time of day.
+      </p>
+    </li>
+  </ul>
+  <div class="main-overlay"></div>
 </section>
+
     <section class="section about-section">
     <div class="container">
         <h2 class="visually-hidden">About a complex</h2>
@@ -688,10 +766,20 @@
   </div>
 </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     
+    <script src="main.js"></script>
   </body>
 </html>
