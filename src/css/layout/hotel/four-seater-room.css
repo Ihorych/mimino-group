@@ -1,11 +1,11 @@
 
-.room-desc-text-four {
+.room-desc-text-block {
     margin-bottom: 28px;
 }
 
 @media screen and (min-width:768px) {
 
-    .room-desc-text-four {
+    .room-desc-text-block {
         width: 476px;
         margin-bottom: 40px;
     }

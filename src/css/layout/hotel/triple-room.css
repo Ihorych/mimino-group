@@ -28,6 +28,7 @@
     font-size: 32px;
     font-weight: 700;
     line-height: calc(40/32);
+    margin-bottom: 32px;
 }
 
 .room-desc-list {
@@ -43,8 +44,8 @@
 
 .room-button-list {
     display: flex;
+    align-items: center;
     gap: 14px;
-
 }
 
 .room-button, .room-button-link {
@@ -121,6 +122,10 @@
         width: 1376px;
         margin-bottom: 100px;
     }
+
+.room-title {
+    margin-bottom: 40px;
+}
 
     .room-photo-list {
         width: 1376px;
