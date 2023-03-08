@@ -109,12 +109,16 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .restourant-about-kichen {
+        padding-bottom: 100px;
+    }
 
     .container-about-kitchen {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: end;
+        min-height: 598px ;
     }
 
     .list-about-kitchen-img {
