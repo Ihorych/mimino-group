@@ -53,7 +53,7 @@
   border-radius: 32px;
 
   background-color: transparent;
-  transition: color linear 250ms, background-color linear 250ms;
+  transition: var(--animation-btn);
   cursor: pointer;
 }
 .light-theme-btn:hover,
@@ -134,6 +134,7 @@
 }
 .icon-slider {
   stroke: rgba(18, 18, 18, 0.3);
+  transition: stroke 250ms linear;
 }
 .icon-slider:hover,
 .icon-slider:focus {
