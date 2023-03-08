@@ -1,96 +1,23 @@
 <section class="section">
-  <div class="container overflow-hotel">
-    <!-- title -->
-    <div class="hotel-title-cont">
-      <h1 class="hero-hotel_title">Hotel</h1>
-      <ul class="hotel-buttons-con">
-        <li>
-          <button class="hero-hotel_btn" type="button">book a room</button>
-        </li>
-        <li>
-          <button class="hero-hotel_btn" type="button">view prices</button>
-        </li>
-      </ul>
-    </div>
-    <!-- slider -->
-    <div class="hotel-hero_slider">
-      <div class="slider-item_img">
-        <picture class="hotel-slider-img">
-          <source
-            media="(min-width: 1440px)"
-            srcset="
-              ./img/hero-hotel/descimg1@1x.jpg 436w,
-              ./img/hero-hotel/descimg1@2x.jpg 872w
-            "
-            type="image/jpg"
-            sizes="(min-width: 1440px) 436px, 100vw"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./img/hero-hotel/tabletimg1@1x.jpg 436w,
-              ./img/hero-hotel/tabletimg1@2x.jpg 872w
-            "
-            type="image/jpg"
-            sizes="(min-width: 768px) 436px, 100vw"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/hero-hotel/mobimg1@1x.jpg 250w,
-              ./img/hero-hotel/mobimg1@2x.jpg 500w
-            "
-            type="image/jpg"
-            sizes="(max-width: 767px) 250px, 100vw"
-          />
-          <img
-            class="hotel-img_sizes"
-            src="./img/hero-hotel/mobimg1@1x.jpg"
-            alt="hotel front side"
-            width="250"
-            height="429"
-            loading="lazy"
-          />
-        </picture>
-      </div>
-      <div class="slider-item_img">
-        <picture class="hotel-slider-img">
-          <source
-            media="(min-width: 1440px)"
-            srcset="
-              ./img/hero-hotel/descimg2@1x.jpg 436w,
-              ./img/hero-hotel/descimg2@2x.jpg 872w
-            "
-            type="image/jpg"
-            sizes="(min-width: 1440px) 436px, 100vw"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./img/hero-hotel/tabletimg2@1x.jpg 436w,
-              ./img/hero-hotel/tabletimg2@2x.jpg 872w
-            "
-            type="image/jpg"
-            sizes="(min-width: 768px) 436px, 100vw"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/hero-hotel/mobimg2@1x.jpg 250w,
-              ./img/hero-hotel/mobimg2@2x.jpg 500w
-            "
-            type="image/jpg"
-            sizes="(max-width: 767px) 250px, 100vw"
-          />
-          <img
-            class="hotel-img_sizes"
-            src="./img/hero-hotel/mobimg2@1x.jpg"
-            alt="hotel right side"
-            width="250"
-            height="429"
-            loading="lazy"
-          />
-        </picture>
+
+  <div class="container desc-container_flex overflow">
+    <div class="desc-main_container">
+      <div class="desc-title">
+        <h1 class="title-hero">HOTEL</h1>
+        <ul class="btn-hero_list">
+          <li class="hover-hero">
+            <button type="button" class="btn-hero js-open-modal" data-modal="2">Book a Room</button>
+          </li>
+          <li class="hover-hero">
+            <button type="button" class="btn-hero">View prices</button>
+          </li>
+        </ul>
+        <div class="desc-hero_text">
+          <p>
+            Whether you're in the mood for a hearty breakfast, a light lunch, or
+            a romantic dinner, our menu has something for everyone.
+          </p>
+        </div>
       </div>
       <div class="slider-item_img">
         <picture class="hotel-slider-img">
