@@ -1,0 +1,46 @@
+<div class="modal modal-price" data-modal="3">
+    <svg class="js-modal-close modal-icon-close" width="28" height="28">
+        <use href="../img/icons/icons.svg.svg#icon-x-close">
+        </use>
+    </svg>
+    <strong class="modal-room-title">PRICES PER <span class="modal-room-title-italic">room</span></strong>
+    
+    <form class="modal-price-form">
+        <p class="modal-price-type">Double suite</p>
+        <ul class="modal-price-list">
+            
+            <li class="modal-price-item">
+              <label class="modal-price-label">
+                <select class="modal-price-input"
+                name="quantity" 
+                id="quantity"
+                placeholder="number of nights"
+                required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                </select>
+                Number of nights
+              </label>
+            </li>
+
+            <li class="modal-price-item"><label class="modal-price-label">
+                <input class="modal-price-input" 
+                type="text"
+                name="user-checkin"
+                value="Today"
+                >
+                Check-in date
+            </label></li>
+
+          </ul>
+        <div class="wrapper-btn-modal-reserve">
+            <button class="room-menu-btn modal-btn-price-reservation price-menu-btn" type="submit">MAKE A RESERVATION</button>
+        </div>
+        
+    </form>
+  </div>
