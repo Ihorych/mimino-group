@@ -145,3 +145,10 @@
     margin-top: 200px;
   }
 }
+.svg-room_hover {
+  stroke: rgba(18, 18, 18, 0.3);
+}
+.svg-room_hover:hover,
+.svg-room_hover:focus {
+  stroke: rgb(18, 18, 18);
+}

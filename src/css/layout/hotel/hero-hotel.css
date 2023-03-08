@@ -151,15 +151,16 @@
 .btn-slider_hotel {
   width: 36px;
   height: 36px;
-  fill: rgb(18, 18, 18, 30%);
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transform: matrix(1, 0, 0, -1, 0, 0);
 }
-.btn-slider_hotel:hover,
-.btn-slider_hotel:focus {
-  fill: rgb(18, 18, 18);
+.svg-hotel_hover {
+  stroke: rgba(18, 18, 18, 0.3);
+}
+.svg-hotel_hover:hover,
+.svg-hotel_hover:focus {
+  stroke: rgb(18, 18, 18);
 }
 @media screen and (min-width: 1440px) {
   .hotel-text-cont {
