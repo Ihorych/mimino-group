@@ -2,7 +2,6 @@
     width: 335px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
 }
 
 .room-photo-list {
@@ -48,22 +47,26 @@
 
 }
 
-.room-button {
-    border: 0.8px solid #121212;
+.room-button, .room-button-link {
+    border: 0.8px solid var(--primary-text-color);
     border-radius: 32px;
-    padding: 18px;
+    padding: 8px 18px;
     background-color: transparent;
     text-transform: uppercase;
+    text-decoration: none;
+    transition: color 250ms var(--animation-btn), background-color 250ms var(--animation-btn);
 }
 
-.room-button-link {
-    display: block;
-    border: 0.8px solid #121212;
-    border-radius: 32px;
-    padding: 18px;
-    background-color: transparent;
-    text-decoration: none;
+.room-button:hover,
+.room-button-link:hover,
+.room-button:focus,
+.room-button-link:focus
+ {
+    color: var(--secondary-text-color);
+    background-color: var(--primary-text-color);
 }
+
+
 
 @media screen and (min-width:320px) and (max-width:375px) {
 
@@ -77,6 +80,12 @@
     }
 }
 
+@media screen and (min-width:320px) and (max-width:767px) {
+.room-type {
+    margin-bottom: 64px;
+}
+}       
+
 @media screen and (min-width:768px) {
     .room-photo-list {
         gap: 32px;
@@ -86,6 +95,7 @@
 
     .room-type {
         width: 704px;
+        margin-bottom: 80px;
     }
 
     .room-photo-block {
@@ -109,6 +119,7 @@
 @media screen and (min-width:1440px) {
     .room-type {
         width: 1376px;
+        margin-bottom: 100px;
     }
 
     .room-photo-list {
