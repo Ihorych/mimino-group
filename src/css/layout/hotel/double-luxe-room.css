@@ -35,6 +35,7 @@
   display: block;
   padding: 8px 18px;
 
+  font-size: 14px;
   line-height: 1.15;
   text-transform: inherit;
   text-align: center;
@@ -42,7 +43,7 @@
   border-radius: 32px;
 
   background-color: transparent;
-  transition: color linear 250ms, background-color linear 250ms;
+  transition: var(--animation-btn);
 }
 .light-theme-btn:hover,
 .light-theme-btn:focus {
