@@ -1,3 +1,17 @@
+.location-section {
+  padding-top: 64px;
+}
+@media screen and (min-width: 768px) {
+  .location-section {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .location-section {
+    padding-top: 100px;
+  }
+}
 .maps {
   box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
   width: 335px;
@@ -62,6 +76,23 @@
     font-size: 18px;
     line-height: 1.33;
   }
+}
+
+.contacts-location,
+.contacts-location,
+.adress-link,
+.adress-link {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+    no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 500ms;
+  --bg-h: 100%;
+}
+.contacts-location:hover,
+.contacts-location:focus,
+.adress-link:hover,
+.adress-link:focus {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
 }
 
 @media screen and (min-width: 1440px) {
