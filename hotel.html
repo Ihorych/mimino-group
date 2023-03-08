@@ -19,7 +19,7 @@
     
     <script type="module" crossorigin src="/mimino-group/assets/hotel-80e2a3bd.js"></script>
     <link rel="modulepreload" crossorigin href="/mimino-group/assets/modals-7ae64c72.js">
-    <link rel="stylesheet" href="/mimino-group/assets/modals-dd5c3771.css">
+    <link rel="stylesheet" href="/mimino-group/assets/modals-88049922.css">
   </head>
   <body>
     <div class="modal modal-room" data-modal="2">
@@ -80,7 +80,52 @@
         
     </form>
  </div>
+    <div class="modal modal-price" data-modal="3">
+    <svg class="js-modal-close modal-icon-close" width="28" height="28">
+        <use href="../img/icons/icons.svg.svg#icon-x-close">
+        </use>
+    </svg>
+    <strong class="modal-room-title">PRICES PER <span class="modal-room-title-italic">room</span></strong>
     
+    <form class="modal-price-form">
+        <p class="modal-price-type">Double suite</p>
+        <ul class="modal-price-list">
+            
+            <li class="modal-price-item">
+              <label class="modal-price-label">
+                <select class="modal-price-input"
+                name="quantity" 
+                id="quantity"
+                placeholder="number of nights"
+                required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                </select>
+                Number of nights
+              </label>
+            </li>
+
+            <li class="modal-price-item"><label class="modal-price-label">
+                <input class="modal-price-input" 
+                type="text"
+                name="user-checkin"
+                value="Today"
+                >
+                Check-in date
+            </label></li>
+
+          </ul>
+        <div class="wrapper-btn-modal-reserve">
+            <button class="room-menu-btn modal-btn-price-reservation price-menu-btn" type="submit">MAKE A RESERVATION</button>
+        </div>
+        
+    </form>
+  </div>
     <header class="dark-header">
   <div class="dark-header-container container">
     <button
@@ -272,7 +317,7 @@
             <button type="button" class="btn-hero js-open-modal" data-modal="2">Book a Room</button>
           </li>
           <li class="hover-hero">
-            <button type="button" class="btn-hero">View prices</button>
+            <button type="button" class="btn-hero js-open-modal" data-modal="3">View prices</button>
           </li>
         </ul>
         <div class="desc-hero_text">
@@ -384,7 +429,7 @@
           </li>
           <!-- Кнопка View prices має відкривати модальне вікно Prices per Room Modal window.  -->
           <li>
-            <button class="light-theme-btn section-text" type="button">
+            <button class="light-theme-btn section-text js-open-modal" data-modal="3" type="button">
               View prices
             </button>
           </li>
@@ -482,7 +527,7 @@
         <a class="room-button-link" href="">More details</a>
       </li>
       <li>
-        <button class="room-button button" type="button">View prices</button>
+        <button class="room-button button js-open-modal" data-modal="3" type="button">View prices</button>
       </li>
     </ul>
   </div>
@@ -567,7 +612,7 @@
         <a class="room-button-link" href="">More details</a>
       </li>
       <li>
-        <button class="room-button button" type="button">View prices</button>
+        <button class="room-button button js-open-modal" data-modal="3" type="button">View prices</button>
       </li>
     </ul>
   </div>
