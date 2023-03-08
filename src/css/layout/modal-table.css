@@ -154,6 +154,12 @@
   color: var(--primary-background-color)
 }
 
+.modal-btn-table-reservation{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color, color;
+}
+
  @media screen and (min-width:768px) {
   .modal-table {
     max-width: 628px;

@@ -60,6 +60,8 @@
     top: 14px;
     right: 14px;
     cursor:pointer;
+
+    stroke: var(--secondary-text-color);
 }
 
 .modal-room-title {
@@ -123,6 +125,18 @@
 
 .modal-btn-room-reservation {
     padding: 14px 49px 14px 48px;
+}
+
+.room-menu-btn{
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: background-color, color;
+}
+
+.room-menu-btn:hover,
+.room-menu-btn:focus {
+  color: var(--secondary-background-color);
+  background-color: var(--secondary-text-color);
 }
 
 /* TABLET-STYLE */
