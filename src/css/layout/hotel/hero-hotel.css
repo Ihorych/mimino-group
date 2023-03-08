@@ -1,28 +1,7 @@
-/* slider */
-.slick-slider {
-}
-/* ограничивающая оболочка */
-.slick-list {
-}
-/* лента слайдов */
 .slick-track {
   display: flex;
   align-items: flex-start;
 }
-
-/* Слайд */
-.slick-slide {
-}
-/*  слайд активный */
-.slick-slide.slick-active {
-}
-/* слайд основной */
-.slick-slide.slick-current {
-}
-/* слайд по центру */
-.slick-slide.slick-center {
-}
-
 /* стрелка */
 .slick-arrow {
   position: relative;
@@ -50,17 +29,10 @@
 .slick-arrow.slick-disabled {
   opacity: 0.2;
 }
-
-/* Точки */
-.slick-dots {
-}
-.slick-dots.li {
-}
-.slick-dots.button {
-}
 /* hero-hotel-slider */
 .hotel-hero_slider {
   position: relative;
+  width: 100%;
 }
 .hotel-hero_slider .slick-arrow {
   position: absolute;
@@ -71,9 +43,6 @@
   width: 36px;
   height: 36px;
 }
-.slider-item_img {
-}
-
 .hero-hotel_title {
   font-weight: 400;
   font-size: 40px;
