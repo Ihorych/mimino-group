@@ -1,4 +1,4 @@
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -86,3 +86,73 @@
   display: flex;
   justify-content: center;
 }
+ */
+
+ .modal-table {
+   /* Скрываем окна  */
+   opacity: 0;
+   visibility: hidden;
+   /*  Установаем ширину окна  */
+   width: 100%;
+   max-width: 335px;
+   min-height: 636px;
+   
+   /*  Центрируем и задаем z-index */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30; /* Должен быть выше чем у подложки*/
+   
+   /*  Побочные стили   */
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: center;
+   border-radius: 3px;
+   transition: 0.3s all;
+
+   padding: 24px 24px 40px 24px;
+
+   background-color: var(--primary-text-color);
+
+   color: var(--primary-background-color);
+   text-align: left;
+ }
+
+ .modal-table-item {
+  margin-bottom: 32px;
+}
+
+ @media screen and (min-width:768px) {
+  .modal-table {
+    max-width: 628px;
+    min-height: 476px;
+    padding: 32px 32px 60px 32px;
+  }
+
+    .modal-btn-table-reservation {
+      padding: 14px 133px;
+      position: static;
+  }
+
+    .wrapper-btn-modal-reserve {
+      text-align: center;
+    }
+
+    .modal-table-item {
+        width: 266px;
+        margin-bottom: 40px;
+    }
+
+    .modal-table-item:last-child{
+      margin-bottom: 80px;
+    }
+ 
+    .modal-table-item:first-child {
+      margin-right: 32px;
+    }
+
+    .modal-table-item:nth-child(3n) {
+      margin-right: 32px;
+      margin-bottom: 80px;
+    }
+  }
