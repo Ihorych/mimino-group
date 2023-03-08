@@ -149,7 +149,7 @@
   /* min-width: 114px; */
   border: 0.8px solid #f7f7f7;
   border-radius: 32px;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: var(--animation-btn);
 }
 
 @media screen and (min-width: 768px) {
