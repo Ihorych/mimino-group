@@ -17,10 +17,69 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="/mimino-group/assets/index-dd312ca2.css">
+    <script type="module" crossorigin src="/mimino-group/assets/hotel-80e2a3bd.js"></script>
+    <link rel="modulepreload" crossorigin href="/mimino-group/assets/modals-7ae64c72.js">
+    <link rel="stylesheet" href="/mimino-group/assets/modals-ce40ca63.css">
   </head>
   <body>
+    <div class="modal modal-room" data-modal="2">
+    <svg class="js-modal-close modal-icon-close" width="28" height="28">
+        <use href="../img/icons/icons.svg.svg#icon-x-close">
+        </use>
+    </svg>
+    <strong class="modal-room-title">BOOK A <span class="modal-room-title-italic">room</span></strong>
     
+    <form class="modal-room-form">
+        <ul class="modal-room-list">
+            <li class="modal-room-item">
+                <label class="modal-room-label">
+                <input class="modal-room-input" type="text"
+                name="user-name"
+                value="Your name"
+                >
+                Who should book a table for?
+            </label></li>
+
+            <li class="modal-room-item"><label class="modal-room-label">
+                <input class="modal-room-input" type="tel"
+                name="user-number"
+                value="+38 ()"
+                pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                >
+                Phone number
+            </label></li>
+            
+            <li class="modal-room-item"><label class="modal-room-label">
+                <input class="modal-room-input" 
+                type="text"
+                name="user-checkin"
+                value="Today"
+                >
+                Check-in date
+            </label></li>
+
+            <li class="modal-room-item"><label class="modal-room-label">
+                <input class="modal-room-input" type="text"
+                name="user-check-out"
+                value="25/04/2023"
+                >
+                Check-out date
+            </label></li>
+            
+            <li class="modal-room-item modal-room-label-margin"><label class="modal-room-label ">
+                <input class="modal-room-input" type="text"
+                name="user-category"
+                value="Double suite"
+                >
+                Number category
+            </label></li>
+        </ul>
+        <div class="wrapper-btn-modal-reserve">
+            <button class="room-menu-btn modal-btn-room-reservation" type="submit">MAKE A RESERVATION</button>
+        </div>
+        
+    </form>
+ </div>
     
     <header class="header">
   <div class="header-container container">
@@ -203,13 +262,14 @@
 </div>
 
         <section class="section">
+
   <div class="container desc-container_flex overflow">
     <div class="desc-main_container">
       <div class="desc-title">
         <h1 class="title-hero">HOTEL</h1>
         <ul class="btn-hero_list">
           <li class="hover-hero">
-            <button type="button" class="btn-hero">Book a Room</button>
+            <button type="button" class="btn-hero js-open-modal" data-modal="2">Book a Room</button>
           </li>
           <li class="hover-hero">
             <button type="button" class="btn-hero">View prices</button>
@@ -222,72 +282,53 @@
           </p>
         </div>
       </div>
-      <div class="desc-img_container">
-        <ul class="images-hero_list desc-img_list">
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="/mimino-group/assets/descimg1@1x-fe17b869.jpg 1x, /mimino-group/assets/descimg1@2x-d7bc6f16.jpg 2x"
-                type="image/jpg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="/mimino-group/assets/tabletimg1@1x-4aabd4fe.jpg 1x, /mimino-group/assets/tabletimg1@2x-05eec955.jpg 2x"
-                type="image/jpg"
-              />
-              <source
-                media="(max-width: 767px)"
-                srcset="/mimino-group/assets/mobimg1@1x-48fc5f92.jpg 1x, /mimino-group/assets/mobimg1@2x-6236c464.jpg 2x"
-                type="image/jpg"
-              />
-              <img
-                class="img-hero_tablet"
-                src="/mimino-group/assets/mobimg1@1x-48fc5f92.jpg"
-                alt="hotel front side"
-                width="250"
-                height="429"
-                loading="lazy"
-              />
-            </picture>
-          </li>
-          <li class="images-hero_item">
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="/mimino-group/assets/descimg2@1x-5e250fb7.jpg 1x, /mimino-group/assets/descimg2@2x-74dcafc3.jpg 2x"
-                type="image/jpg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="/mimino-group/assets/tabletimg2@1x-e145d998.jpg 1x, /mimino-group/assets/tabletimg2@2x-fb323abb.jpg 2x"
-                type="image/jpg"
-              />
-              <source
-                media="(max-width: 767px)"
-                srcset="/mimino-group/assets/mobimg2@1x-29466bdb.jpg 1x, /mimino-group/assets/mobimg2@2x-1c641d4a.jpg 2x"
-                type="image/jpg"
-              />
-              <img
-                class="img-hero_tablet"
-                src=".img/hero-hotel/mobimg2@1x.jpg"
-                alt="hotel right side"
-                width="250"
-                height="429"
-                loading="lazy"
-              />
-            </picture>
-          </li>
-        </ul>
+      <div class="slider-item_img">
+        <picture class="hotel-slider-img">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/mimino-group/assets/descimg3@1x-94ba6fbf.jpg 436w, /mimino-group/assets/descimg3@2x-341044c7.jpg 872w"
+            type="image/jpg"
+            sizes="(min-width: 1440px) 436px, 100vw"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/mimino-group/assets/tabletimg3@1x-fea86570.jpg 436w, /mimino-group/assets/tabletimg3@2x-9b2a4441.jpg 872w"
+            type="image/jpg"
+            sizes="(min-width: 768px) 436px, 100vw"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/mimino-group/assets/mobimg3@1x-9fb000b7.jpg 250w, /mimino-group/assets/mobimg3@2x-3f6f264e.jpg 500w"
+            type="image/jpg"
+            sizes="(max-width: 767px) 250px, 100vw"
+          />
+          <img
+            class="hotel-img_sizes"
+            src="/mimino-group/assets/mobimg3@1x-9fb000b7.jpg"
+            alt="double luxury room"
+            width="250"
+            height="429"
+            loading="lazy"
+          />
+        </picture>
       </div>
     </div>
-    <div class="hero_text hero-text_hidden">
-      <p>
-        Whether you're in the mood for a hearty breakfast, a light lunch, or a
-        romantic dinner, our menu has something for everyone.
-      </p>
+    <div class="hotel-bottom_wrap">
+      <div class="arrows-wrap"></div>
+      <div class="hotel-text-cont">
+        <p class="hotel-hero_text">
+          Whether you're in the mood for a hearty breakfast, a light lunch, or a
+          romantic dinner, our menu has something for everyone.
+        </p>
+      </div>
     </div>
   </div>
+  <!-- Connect JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <!-- Connect slick.min.js -->
+  
+  <!-- connect slick-slider.js -->
+  
 </section>
 
           <section class="section luxury-room">
@@ -353,7 +394,6 @@
   </div>
 </section>
 
-ENOENT: no such file or directory, open '/home/runner/work/mimino-group/mimino-group/src/partials/hotel/double-menu-table.html'
             <section class="room-type container">
   <div class="room-photo-list list">
     <picture class="room-photo">
@@ -592,6 +632,10 @@ ENOENT: no such file or directory, open '/home/runner/work/mimino-group/mimino-g
     </ul>
   </div>
 </footer>
-              
+   
+   <!-- Подложка под модальным окном -->
+   <div class="overlay js-overlay-modal"></div>
+         
+
   </body>
 </html>

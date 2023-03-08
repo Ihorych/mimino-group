@@ -17,11 +17,68 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <link rel="stylesheet" href="/mimino-group/assets/index-dd312ca2.css">
+    <script type="module" crossorigin src="/mimino-group/assets/modals-7ae64c72.js"></script>
+    <link rel="stylesheet" href="/mimino-group/assets/modals-ce40ca63.css">
   </head>
   <body>
+    <div class="modal modal-room" data-modal="2">
+    <svg class="js-modal-close modal-icon-close" width="28" height="28">
+        <use href="../img/icons/icons.svg.svg#icon-x-close">
+        </use>
+    </svg>
+    <strong class="modal-room-title">BOOK A <span class="modal-room-title-italic">room</span></strong>
     
-    
+    <form class="modal-room-form">
+        <ul class="modal-room-list">
+            <li class="modal-room-item">
+                <label class="modal-room-label">
+                <input class="modal-room-input" type="text"
+                name="user-name"
+                value="Your name"
+                >
+                Who should book a table for?
+            </label></li>
+
+            <li class="modal-room-item"><label class="modal-room-label">
+                <input class="modal-room-input" type="tel"
+                name="user-number"
+                value="+38 ()"
+                pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                >
+                Phone number
+            </label></li>
+            
+            <li class="modal-room-item"><label class="modal-room-label">
+                <input class="modal-room-input" 
+                type="text"
+                name="user-checkin"
+                value="Today"
+                >
+                Check-in date
+            </label></li>
+
+            <li class="modal-room-item"><label class="modal-room-label">
+                <input class="modal-room-input" type="text"
+                name="user-check-out"
+                value="25/04/2023"
+                >
+                Check-out date
+            </label></li>
+            
+            <li class="modal-room-item modal-room-label-margin"><label class="modal-room-label ">
+                <input class="modal-room-input" type="text"
+                name="user-category"
+                value="Double suite"
+                >
+                Number category
+            </label></li>
+        </ul>
+        <div class="wrapper-btn-modal-reserve">
+            <button class="room-menu-btn modal-btn-room-reservation" type="submit">MAKE A RESERVATION</button>
+        </div>
+        
+    </form>
+ </div>
 
     <header class="header">
   <div class="dark-header-container container">
@@ -514,7 +571,7 @@
         </picture>
       </div>
 
-      <button class="room-menu-btn">book a room</button>
+      <button class="room-menu-btn js-open-modal" data-modal="2">book a room</button>
     </div>
   </div>
 </section>
@@ -579,5 +636,10 @@
     </ul>
   </div>
 </footer>
+
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-modal"></div>  
+
+    
   </body>
 </html>

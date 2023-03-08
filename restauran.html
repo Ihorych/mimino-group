@@ -17,10 +17,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <link rel="stylesheet" href="/mimino-group/assets/index-dd312ca2.css">
+    <script type="module" crossorigin src="/mimino-group/assets/modals-7ae64c72.js"></script>
+    <link rel="stylesheet" href="/mimino-group/assets/modals-ce40ca63.css">
   </head>
   <body>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <div class="modal-content">
       <p class="modal-tittle">BOOK A TABLE</p>
@@ -89,7 +90,71 @@
     </div>
   </div>
 </div>
+ -->
 
+ <div class="modal modal-table" data-modal="1">
+  <svg class="js-modal-close modal-icon-close" width="28" height="28">
+      <use href="../img/icons/icons.svg.svg#icon-x-close">
+      </use>
+  </svg>
+  <strong class="modal-room-title">BOOK A <span class="modal-room-title-italic">table</span></strong>
+  
+  <form class="modal-room-form">
+      <ul class="modal-room-list">
+
+          <li class="modal-table-item">
+              <label class="modal-room-label">
+              <input class="modal-room-input" type="text"
+              name="user-name"
+              value="Your name"
+              >
+              Who should book a table for?
+          </label></li>
+
+          <li class="modal-table-item">
+            <label>
+              <select class="modal-room-input"
+              name="quantity" 
+              id="quantity"
+              placeholder="number of people"
+              required>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              </select>
+            </label>
+          </li>
+
+          <li class="modal-table-item">
+            <label class="modal-room-label">
+              <input class="modal-room-input" 
+              type="text"
+              name="user-checkin"
+              value="Today"
+              >
+              What date to book?
+          </label></li>
+
+          <li class="modal-table-item">
+            <label class="modal-room-label">
+              <input class="modal-room-input" type="tel"
+              name="user-number"
+              value="+38 ()"
+              pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+              >
+              Phone number
+            </label>
+          </li>
+
+      <div class="wrapper-btn-modal-reserve">
+          <button class="room-menu-btn modal-btn-table-reservation table-menu-btn" type="submit">MAKE A RESERVATION</button>
+      </div>
+      
+  </form>
+</div>
 
     <header class="header">
   <div class="dark-header-container container">
@@ -278,7 +343,7 @@
       <h1 class="hero-title">Restaurant</h1>
       <ul class="general-list-btn hero-list-btn">
         <li class="hero-item-btn">
-          <button class="light-theme-btn">Book a room</button>
+          <button class="light-theme-btn js-open-modal" data-modal="1">Book a table</button>
         </li>
         <li class="hero-item-btn">
           <a class="light-theme-btn" href="#menu">View prices</a>
@@ -700,7 +765,7 @@
       </div>
     </div>
     <div class="button-menu-restauran">
-      <button type="button" class="restauran-btn">BOOK A TABLE</button>
+      <button type="button" class="restauran-btn js-open-modal" data-modal="1">BOOK A TABLE</button>
     </div>
   </div>
 </section>
@@ -764,5 +829,8 @@
     </ul>
   </div>
 </footer>
+
+    <div class="overlay js-overlay-modal"></div>
+       
   </body>
 </html>
