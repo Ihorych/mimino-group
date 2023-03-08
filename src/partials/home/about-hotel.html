@@ -31,7 +31,12 @@
               ./img/about-hotel/image-1_mob@2x.jpg 2x
             "
           />
-          <img src="./img/about-hotel/image-1_mob@1x.jpg" alt="Cosmetics" />
+          <img
+            class="about-hotel-img-gallary"
+            src="./img/about-hotel/image-1_mob@1x.jpg"
+            alt="Cosmetics"
+            loading="lazy"
+          />
         </picture>
         <picture>
           <source
@@ -55,7 +60,12 @@
               ./img/about-hotel/image-2_mob@2x.jpg 2x
             "
           />
-          <img src="./img/about-hotel/image-2_mob@1x.jpg" alt="Bathroom" />
+          <img
+            class="about-hotel-img-gallary"
+            src="./img/about-hotel/image-2_mob@1x.jpg"
+            alt="Bathroom"
+            loading="lazy"
+          />
         </picture>
       </div>
       <div class="center-gallary">
@@ -81,7 +91,12 @@
               ./img/about-hotel/image-center_mob@2x.jpg 2x
             "
           />
-          <img src="./img/about-hotel/image-center_mob@1x.jpg" alt="Room" />
+          <img
+            class="about-hotel-img-gallary"
+            src="./img/about-hotel/image-center_mob@1x.jpg"
+            alt="Room"
+            loading="lazy"
+          />
         </picture>
       </div>
       <div class="about-hotel-right-gallary">
@@ -98,7 +113,11 @@
               ./img/about-hotel/image-3_tab@1x.jpg 1x,
               ./img/about-hotel/image-3_tab@2x.jpg 2x
             " />
-          <img src="./img/about-hotel/image-3_mob@1x.jpg" alt="Bathroom"
+          <img
+            class="about-hotel-img-gallary"
+            src="./img/about-hotel/image-3_mob@1x.jpg"
+            alt="Bathroom"
+            loading="lazy"
         /></picture>
         <picture
           ><source
@@ -113,21 +132,24 @@
               ./img/about-hotel/image-4_tab@1x.jpg 1x,
               ./img/about-hotel/image-4_tab@2x.jpg 2x
             " />
-          <img src="./img/about-hotel/image-4_mob@1x.jpg" alt="Cosmetics"
+          <img
+            class="about-hotel-img-gallary"
+            src="./img/about-hotel/image-4_mob@1x.jpg"
+            alt="Cosmetics"
+            loading="lazy"
         /></picture>
       </div>
     </div>
-    <div>
-      <ul class="about-hotel-btn-list">
-        <li>
-          <button class="about-hotel-btn" type="button">Book a room</button>
-        </li>
-        <li>
-          <button class="about-hotel-btn" type="button">
-            <a href="/src/hotel.html">View rooms</a>
-          </button>
-        </li>
-      </ul>
+    <div class="about-hotel-btn-list">
+      <button class="about-hotel-btn" type="button">Book a room</button>
+      <a
+        class="about-hotel-btn"
+        href="/src/hotel.html"
+        aria-label="View rooms"
+        target="_blank"
+        rel="noopener noreferrer"
+        >View rooms</a
+      >
     </div>
   </div>
 </section>
