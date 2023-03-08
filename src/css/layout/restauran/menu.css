@@ -1,9 +1,3 @@
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
 .price-menu {
   background-color: var(--secondary-background-color);
 }
