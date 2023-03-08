@@ -1,5 +1,5 @@
 body {
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -9,15 +9,30 @@ body {
   color: var(--primary-text-color);
 }
 
-.section{
-    padding-bottom: 64px;
+:root {
+  --primary-text-color: #121212;
+  --secondary-text-color: #f6f6f6;
+  --primary-background-color: #f7f7f7;
+  --secondary-background-color: #121212;
+  --white-base: #ffffff;
+  --restauran-menu-text: rgba(216, 215, 215, 0.5);
+  --line-color-menu: rgba(255, 255, 255, 0.5);
+  --about-subtitle-color: #484848;
+  --animation-btn: width 1.5s, height 1.5s, background-color 1.5s,
+    transform 1.5s;
+}
+
+.section {
+  padding-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 80px;
   }
-  
-  @media screen and (min-width:768px) {
-    .section{
-      padding-bottom: 80px;}
-    }
-    @media screen and (min-width:1140px) {
-      .section{
-        padding-bottom: 100px;}
-      }
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}

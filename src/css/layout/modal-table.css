@@ -1,0 +1,199 @@
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  z-index: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 335px;
+  min-height: 530px;
+  background-color: var(--secondary-background-color);
+  padding: 24px 24px 40px;
+  border-radius: 2px;
+}
+
+.modal-tittle {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.36;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  margin-bottom: 40px;
+}
+
+.modal-input {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1, 5;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d8d7d7;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.placeholder-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+}
+
+.undertitle {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1, 5;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d8d7d7;
+}
+
+.modal-buttom {
+  display: flex;
+  justify-content: center;
+}
+ */
+
+ .modal-table {
+   /* Скрываем окна  */
+   opacity: 0;
+   visibility: hidden;
+   /*  Установаем ширину окна  */
+   width: 100%;
+   max-width: 335px;
+   min-height: 636px;
+   
+   /*  Центрируем и задаем z-index */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30; /* Должен быть выше чем у подложки*/
+   
+   /*  Побочные стили   */
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: center;
+   border-radius: 3px;
+   transition: 0.3s all;
+
+   padding: 24px 24px 40px 24px;
+
+   background-color: var(--primary-text-color);
+
+   color: var(--primary-background-color);
+   text-align: left;
+ }
+
+ .modal-table-item {
+  margin-bottom: 32px;
+}
+
+.modal-table-label {
+  display: block;
+
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #D8D7D7;
+}
+
+.modal-table-input {
+  width: 100%;
+  height: 36px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 18px;
+
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  background-color:transparent;
+  outline: none;
+  border:none;
+  border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+  color: var(--primary-background-color)
+}
+
+.modal-btn-table-reservation{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color, color;
+}
+
+ @media screen and (min-width:768px) {
+  .modal-table {
+    max-width: 628px;
+    min-height: 476px;
+    padding: 32px 32px 60px 32px;
+  }
+  .modal-table-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .modal-btn-table-reservation {
+      padding: 14px 133px;
+      position: static;
+  }
+
+    .wrapper-btn-modal-reserve {
+      text-align: center;
+    }
+
+    .modal-table-item {
+        width: 266px;
+        margin-bottom: 40px;
+    }
+
+    .modal-table-item:last-child{
+      margin-bottom: 80px;
+    }
+ 
+    .modal-table-item:first-child {
+      margin-right: 32px;
+    }
+
+    .modal-table-item:nth-child(3n) {
+      margin-right: 32px;
+    }
+  }

@@ -5,6 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero</title>
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,19 +29,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/utils/index.css" />
   </head>
   <body>
+    <load src="/partials/modal-table.html" />
+    <load src="/partials/modal-room.html" />
     <load src="/partials/header.html" />
+    <load src="/partials/mobile-menu.html" />
 
     <load src="/partials/home/hero.html" />
-    <load src="/partials/home/restaurant-hotel-complex.html" />
-    <load src="/partials/home/business-class-hotel.html" />
+    <load src="/partials/home/about-a-complex.html" />
     <load src="/partials/home/about-restauran.html" />
     <load src="/partials/home/welcom-hotel.html" />
     <load src="/partials/home/about-hotel.html" />
     <load src="/partials/home/location.html" />
 
+    <!-- <load src="/partials/slider.html" /> -->
+
     <load src="/partials/footer.html" />
+
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-modal"></div>
+
+    <script type="module" src="/main.js"></script>
+    <script src="main.js" type="module"></script>
+    <script src="./js/modals.js" type="module"></script>
   </body>
 </html>

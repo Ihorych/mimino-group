@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restauran</title>
@@ -15,15 +16,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/utils/index.css" />
   </head>
   <body>
-    <load src="/partials/header.html" />
+    <load src="/partials/modal-table.html" />
+
+    <load src="/partials/header/header-restauran.html" />
+    <load src="/partials/mobile-menu.html" />
 
     <load src="/partials/restauran/hero-restauran.html" />
     <load src="/partials/restauran/about-restauran.html" />
     <load src="/partials/restauran/menu.html" />
 
     <load src="/partials/footer.html" />
+
+    <div class="overlay js-overlay-modal"></div>
+    
+   <script src="./js/modals.js" type="module"></script>    
   </body>
 </html>

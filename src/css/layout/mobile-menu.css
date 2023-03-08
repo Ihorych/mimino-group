@@ -1,0 +1,175 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  min-width:320px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+
+  transform: translateX(120%);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+@media screen and (min-width:1440px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F7F7F7;
+}
+
+.header-menu-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F7F7F7;
+}
+
+@media screen and (min-width:768px) {
+  .mob-menu-link {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+}
+
+.mob-menu-socials {
+  position: absolute;
+  left: 20px;
+  bottom: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (min-width:768px) {
+  .mob-menu-socials {
+    display: none;
+  }
+}
+
+.header-menu-socials {
+  position: absolute;
+  right: 32px;
+  top: 27px;
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width:767px) {
+  .header-menu-socials {
+    display: none;
+  }
+}
+
+.mob-menu-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.header-menu-socials-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.header-menu-socials-icon,
+.mob-menu-socials-icon {
+  stroke: var(--secondary-text-color);
+}
+
+.header-menu-socials-link:hover,
+.header-menu-socials-link:focus {
+  background-color: var(--secondary-text-color);
+}
+
+.header-menu-socials-link:hover .header-menu-socials-icon {
+  stroke: var(--secondary-background-color);
+}
+
+
+.mob-menu-socials-link:hover,
+.mob-menu-socials-link:focus {
+  background-color: var(--white-base);
+}
+
+.mob-menu-socials-link:hover .mob-menu-socials-icon {
+  stroke: var(--secondary-background-color);
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 23px;
+  left: 32px;
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.mob-menu-icon-close {
+  fill: var(--secondary-background-color);
+}
+
+.mob-menu-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 128px;
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+}
+
+.mob-header-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  margin-bottom: 3px;
+}
+
+@media screen and (min-width:768px) {
+  .mob-header-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.mob-header-text {
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 1.33;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #D8D7D7;
+}
+
+@media screen and (min-width:768px) {
+  .mob-header-text {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+}
