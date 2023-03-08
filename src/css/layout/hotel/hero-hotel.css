@@ -37,6 +37,7 @@
   border: 0.8px solid var(--primary-text-color);
   border-radius: 32px;
   cursor: pointer;
+  transition: var(--animation-btn);
 }
 .hero-hotel_btn:hover,
 .hero-hotel_btn:focus {
@@ -95,11 +96,15 @@
     letter-spacing: 0;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .hotel-bottom_wrap {
-    margin-top: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    margin-top: 40px;
   }
 }
+
 /* slider */
 .hotel-hero_slider {
   display: flex;
@@ -140,11 +145,18 @@
 .hotel-slide_svg {
   margin-top: 24px;
 }
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hotel-slide_svg {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 1440px) {
   .hotel-slide_svg {
     position: absolute;
     left: 53%;
     margin-top: 0;
+    padding-top: 16px;
   }
 }
 .slider-svg_hotel {
