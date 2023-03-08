@@ -3,6 +3,7 @@
   width: 335px;
   height: 384px;
   margin-bottom: 32px;
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
 }
 .location-title {
   font-weight: 500;

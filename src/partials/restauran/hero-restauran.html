@@ -1,52 +1,92 @@
 <section class="hero section">
-    <div class="container hidden">
-        <div class="hero-right-wrapper">
-            <h1 class="hero-title">Restaurant</h1>
-            <ul class="general-list-btn hero-list-btn">
-                <li class="hero-item-btn">
-                    <button class="light-theme-btn">Book a room</button>
-                </li>
-                <li class="hero-item-btn">
-                    <a class="light-theme-btn" href="#menu">View prices</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Картинки -->
-        <div class="hero-left-wrapper">
-            <ul class="hero-list-img">
-                <li class="hero-item-img">
-                    <picture>
-                        <source media="(min-width: 1440px)" srcset="
-                                    ./img/hero-restaurant/img-1_desk@1x.jpg 1x, 
-                                    ./img/hero-restaurant/img-1_desk@2x.jpg 2x" type="image/jpg">
-                        <source media="(min-width: 768px)" srcset="
-                                    ./img/hero-restaurant/img-1_tab@1x.jpg 1x, 
-                                    ./img/hero-restaurant/img-1_tab@2x.jpg 2x" type="image/jpg">
-                        <source media="(max-width: 767px)" srcset="
-                                    ./img/hero-restaurant/img-1_mob@1x.jpg 1x, 
-                                    ./img/hero-restaurant/img-1_mob@2x.jpg 2x" type="image/jpg">
-                        <img src="./img/hero-restaurant/img-1_mob@1x.jpg" alt="Tables" width="436" height="580"
-                            loading="lazy">
-                    </picture>
-                </li>
-                <li class="hero-item-img">
-                    <div class="hero-img-wrapper">
-                        <picture>
-                            <source media="(min-width: 1440px)" srcset="
-                                    ./img/hero-restaurant/img-2_desk@1x.jpg 1x, 
-                                    ./img/hero-restaurant/img-2_desk@2x.jpg 2x" type="image/jpg">
-                            <source media="(min-width: 768px)" srcset="
-                                    ./img/hero-restaurant/img-2_tab@1x.jpg 1x, 
-                                    ./img/hero-restaurant/img-2_tab@2x.jpg 2x" type="image/jpg">
-                            <source media="(max-width: 767px)" srcset="
-                                    ./img/hero-restaurant/img-2_mob@1x.jpg 1x, 
-                                    ./img/hero-restaurant/img-2_mob@2x.jpg 2x" type="image/jpg">
-                            <img src="./img/hero-restaurant/img-2_mob@1x.jpg" alt="Dishes" width="436" height="580"
-                                loading="lazy">
-                        </picture>
-                    </div>
-                </li>
-                <!-- <li class="hero-item-img">
+  <div class="container hidden">
+    <div class="hero-right-wrapper">
+      <h1 class="hero-title">Restaurant</h1>
+      <ul class="general-list-btn hero-list-btn">
+        <li class="hero-item-btn">
+          <button class="light-theme-btn js-open-modal" data-modal="1">Book a table</button>
+        </li>
+        <li class="hero-item-btn">
+          <a class="light-theme-btn" href="#menu">View prices</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Картинки -->
+    <div class="hero-left-wrapper">
+      <ul class="hero-list-img">
+        <li class="hero-item-img">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/hero-restaurant/img-1_desk@1x.jpg 1x,
+                ./img/hero-restaurant/img-1_desk@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/hero-restaurant/img-1_tab@1x.jpg 1x,
+                ./img/hero-restaurant/img-1_tab@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/hero-restaurant/img-1_mob@1x.jpg 1x,
+                ./img/hero-restaurant/img-1_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./img/hero-restaurant/img-1_mob@1x.jpg"
+              alt="Tables"
+              width="436"
+              height="580"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+        <li class="hero-item-img">
+          <div class="hero-img-wrapper">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/hero-restaurant/img-2_desk@1x.jpg 1x,
+                  ./img/hero-restaurant/img-2_desk@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/hero-restaurant/img-2_tab@1x.jpg 1x,
+                  ./img/hero-restaurant/img-2_tab@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./img/hero-restaurant/img-2_mob@1x.jpg 1x,
+                  ./img/hero-restaurant/img-2_mob@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                src="./img/hero-restaurant/img-2_mob@1x.jpg"
+                alt="Dishes"
+                width="436"
+                height="580"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </li>
+        <!-- <li class="hero-item-img">
                                     <picture>
                                         <source media="(min-width: 1440px)" srcset="
                                     ./img/hero-restaurant/img-3_desk@1x.jpg 1x, 
@@ -61,36 +101,36 @@
                                     loading="lazy">
                                     </picture>
                                 </li> -->
-            </ul>
-        </div>
-        <!-- Слайдери -->
-        <div class="common-slider-text-box">
-            <div class="hero-slider-wrapper">
-                <ul class="hero-slider-list">
-                    <li class="hero-slider-item">
-                        <button class="hero-slider-btn">
-                            <svg class="icon-slider" width="7" height="14">
-                                <use href="./img/hero-restaurant/slider.svg#slider-left"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="hero-slider-item">
-                        <button class="hero-slider-btn">
-                            <svg class="icon-slider" width="7" height="14">
-                                <use href="./img/hero-restaurant/slider.svg#slider-rigth"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <!-- Текст -->
-            <div class="hero-box-text">
-                <p class="ligth-theme-text">
-                    Whether you're in the mood for a hearty breakfast, a light lunch, or <span
-                        class="hero-accent-italic">a romantic dinner</span>, our menu has something for
-                    everyone.
-                </p>
-            </div>
-        </div>
+      </ul>
     </div>
+    <!-- Слайдери -->
+    <div class="common-slider-text-box">
+      <div class="slider-wrapper">
+        <ul class="slider-list">
+          <li class="hero-slider-item">
+            <button class="slider-btn">
+              <svg class="icon-slider" width="7" height="14">
+                <use href="./img/icons/slider.svg#slider-left"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="hero-slider-item">
+            <button class="slider-btn">
+              <svg class="icon-slider" width="7" height="14">
+                <use href="./img/icons/slider.svg#slider-rigth"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Текст -->
+      <div class="hero-box-text">
+        <p class="ligth-theme-text">
+          Whether you're in the mood for a hearty breakfast, a light lunch, or
+          <span class="hero-accent-italic">a romantic dinner</span>, our menu
+          has something for everyone.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>

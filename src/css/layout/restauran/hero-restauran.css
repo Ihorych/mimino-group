@@ -115,17 +115,17 @@
 }
 /* ========================Типу слайдер */
 @media screen and (max-width: 767px) {
-  .hero-slider-list {
+  .slider-list {
     margin-top: 24px;
     margin-bottom: 40px;
   }
 }
-.hero-slider-list {
+.slider-list {
   display: flex;
   gap: 32px;
   justify-content: end;
 }
-.hero-slider-btn {
+.slider-btn {
   width: 36px;
   height: 36px;
   background-color: transparent;
@@ -133,11 +133,11 @@
   cursor: pointer;
 }
 .icon-slider {
-  fill: rgba(18, 18, 18, 0.3);
+  stroke: rgba(18, 18, 18, 0.3);
 }
 .icon-slider:hover,
 .icon-slider:focus {
-  fill: var(--secondary-background-color);
+  stroke: var(--secondary-background-color);
 }
 
 .hero-accent-italic {
@@ -158,7 +158,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .hero-slider-wrapper {
+  .slider-wrapper {
     display: block;
     position: absolute;
     left: 53%;

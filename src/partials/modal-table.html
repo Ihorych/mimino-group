@@ -1,0 +1,134 @@
+<!-- <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="modal-content">
+      <p class="modal-tittle">BOOK A TABLE</p>
+      <form class="input-list">
+        <div class="wrapper">
+          <div class="relative">
+            <label class="modal-input">
+              <input
+                type="text"
+                name="username"
+                placeholder="YOUR NAME"
+                class="placeholder-style"
+              />
+              <span>Who should book a table for?</span>
+            </label>
+          </div>
+
+          <div class="relative">
+            <label for="size" class="modal-input"></label>
+            <select id="number" name="number" class="placeholder-style">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="relative">
+            <label for="fav" class="modal-input"></label>
+            <select id="day" name="number" class="placeholder-style">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+            <span class="undertitle">What date to book?</span>
+          </div>
+
+          <div class="relative">
+            <label class="modal-input">
+              <span class="">phone number</span>
+              <input
+                id="online_phone-two"
+                type="tel"
+                name="user_tel"
+                class="placeholder-style"
+                value="+38 (0)"
+                pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                placeholder="+38 ()___-__-__"
+                title="Phone number should be like +38 (098) xxx-xx-xx"
+                required
+              />
+            </label>
+            <span class="undertitle">phone number</span>
+          </div>
+        </div>
+        <div class="modal-buttom">
+          <button type="submit" class="button-secondary" data-modal-close>
+            Make a reservation
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+ -->
+
+ <div class="modal modal-table" data-modal="1">
+  <svg class="js-modal-close modal-icon-close" width="28" height="28">
+      <use href="../img/icons/icons.svg.svg#icon-x-close">
+      </use>
+  </svg>
+  <strong class="modal-room-title">BOOK A <span class="modal-room-title-italic">table</span></strong>
+  
+  <form class="modal-room-form">
+      <ul class="modal-room-list">
+
+          <li class="modal-table-item">
+              <label class="modal-room-label">
+              <input class="modal-room-input" type="text"
+              name="user-name"
+              value="Your name"
+              >
+              Who should book a table for?
+          </label></li>
+
+          <li class="modal-table-item">
+            <label>
+              <select class="modal-room-input"
+              name="quantity" 
+              id="quantity"
+              placeholder="number of people"
+              required>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              </select>
+            </label>
+          </li>
+
+          <li class="modal-table-item">
+            <label class="modal-room-label">
+              <input class="modal-room-input" 
+              type="text"
+              name="user-checkin"
+              value="Today"
+              >
+              What date to book?
+          </label></li>
+
+          <li class="modal-table-item">
+            <label class="modal-room-label">
+              <input class="modal-room-input" type="tel"
+              name="user-number"
+              value="+38 ()"
+              pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+              >
+              Phone number
+            </label>
+          </li>
+
+      <div class="wrapper-btn-modal-reserve">
+          <button class="room-menu-btn modal-btn-table-reservation table-menu-btn" type="submit">MAKE A RESERVATION</button>
+      </div>
+      
+  </form>
+</div>
