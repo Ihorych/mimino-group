@@ -36,6 +36,7 @@
   border: 0.8px solid var(--primary-text-color);
   border-radius: 32px;
   cursor: pointer;
+  transition: var(--animation-btn);
 }
 .luxury-btn:hover,
 .luxury-btn:focus {
@@ -127,21 +128,54 @@
 .svg-slider_wrap {
   margin-top: 24px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .svg-slider_wrap {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 1440px) {
   .svg-slider_wrap {
     position: absolute;
     left: 53%;
-    bottom: -2%;
+    padding-top: 16px;
+    margin-top: 0;
+  }
+}
+.luxury-text-cont {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .luxury-text-cont {
+    width: 289px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .luxury-text-cont {
     width: 289px;
-    margin-top: 48px;
+    margin-top: 217px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .bottom-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 1440px) {
   .bottom-wrap {
-    margin-top: 200px;
+    margin-top: 0;
   }
+}
+
+.svg-room_hover {
+  stroke: rgba(18, 18, 18, 0.3);
+}
+.svg-room_hover:hover,
+.svg-room_hover:focus {
+  stroke: rgb(18, 18, 18);
 }

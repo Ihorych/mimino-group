@@ -37,6 +37,7 @@
   border: 0.8px solid var(--primary-text-color);
   border-radius: 32px;
   cursor: pointer;
+  transition: var(--animation-btn);
 }
 .hero-hotel_btn:hover,
 .hero-hotel_btn:focus {
@@ -84,18 +85,26 @@
   }
 }
 .hotel-hero_text {
-  width: 289px;
+  font-style: italic;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-
-@media screen and (min-width: 1440px) {
-  .hotel-bottom_wrap {
-    margin-top: 200px;
+@media screen and (min-width: 375px) {
+  .hotel-hero_text {
+    letter-spacing: 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hotel-bottom_wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    margin-top: 40px;
+  }
+}
+
 /* slider */
 .hotel-hero_slider {
   display: flex;
@@ -136,11 +145,18 @@
 .hotel-slide_svg {
   margin-top: 24px;
 }
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hotel-slide_svg {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 1440px) {
   .hotel-slide_svg {
     position: absolute;
     left: 53%;
-    bottom: -2%;
+    margin-top: 0;
+    padding-top: 16px;
   }
 }
 .slider-svg_hotel {
@@ -150,20 +166,35 @@
 }
 .btn-slider_hotel {
   width: 36px;
-  height: 36px;
-  fill: rgb(18, 18, 18, 30%);
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transform: matrix(1, 0, 0, -1, 0, 0);
 }
-.btn-slider_hotel:hover,
-.btn-slider_hotel:focus {
-  fill: rgb(18, 18, 18);
+
+@media screen and (min-width: 1440px) {
+  .btn-slider_hotel {
+    height: 36px;
+  }
+}
+.svg-hotel_hover {
+  stroke: rgba(18, 18, 18, 0.3);
+}
+.svg-hotel_hover:hover,
+.svg-hotel_hover:focus {
+  stroke: rgb(18, 18, 18);
+}
+.hotel-text-cont {
+  margin-top: 40px;
+  max-width: 335px;
+}
+@media screen and (min-width: 768px) {
+  .hotel-text-cont {
+    max-width: 338px;
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 1440px) {
   .hotel-text-cont {
-    margin-top: 48px;
-    width: 289px;
+    margin-top: 248px;
   }
 }
