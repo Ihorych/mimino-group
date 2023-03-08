@@ -30,15 +30,11 @@ background: inherit;
 }
 }
 
-.header{
+.dark-header{
 border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 
 }
-@media screen and (max-width: 1399px){
-    .header{
-        background-color: var(--primary-text-color);
-    }
-}
+
 
 .menu-toggle {
   display: flex;
