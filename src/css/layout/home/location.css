@@ -1,4 +1,5 @@
 .location-section {
+  background-color: var(--primary-background-color);
   padding-top: 64px;
 }
 @media screen and (min-width: 768px) {
@@ -66,7 +67,7 @@
   .location-thumb {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+
     justify-content: space-between;
   }
   .location-adress {
@@ -82,17 +83,19 @@
 .contacts-location,
 .adress-link,
 .adress-link {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
-    no-repeat right bottom / 0 var(--bg-h);
-  transition: background-size 500ms;
-  --bg-h: 100%;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
 }
+
 .contacts-location:hover,
 .contacts-location:focus,
 .adress-link:hover,
 .adress-link:focus {
-  background-size: 100% var(--bg-h);
-  background-position-x: left;
+  background-size: 100% 2px;
 }
 
 @media screen and (min-width: 1440px) {
