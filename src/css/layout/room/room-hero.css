@@ -70,9 +70,11 @@
   border: none;
   cursor: pointer;
 }
+.room-hero_section {
+  background-color: var(--secondary-text-color);
+}
 .overflow-room {
   overflow: hidden;
-  background-color: var(--secondary-text-color);
 }
 @media screen and (min-width: 1440px) {
   .overflow-room {
@@ -80,7 +82,6 @@
     position: relative;
   }
 }
-
 .room-hero_slider {
   display: flex;
   gap: 20px;

@@ -1,11 +1,13 @@
 .overflow-hotel {
   overflow: hidden;
+}
+.hero-hotel_section {
   background-color: var(--secondary-text-color);
 }
-
 @media screen and (min-width: 1440px) {
   .overflow-hotel {
     position: relative;
+    height: 692px;
   }
 }
 .hero-hotel_title {
