@@ -55,6 +55,7 @@
     background-color: transparent;
     text-transform: uppercase;
     text-decoration: none;
+    color: var(--primary-text-color);
     transition: color 250ms var(--animation-btn), background-color 250ms var(--animation-btn);
 }
 
@@ -84,6 +85,10 @@
 @media screen and (min-width:320px) and (max-width:767px) {
 .room-type {
     margin-bottom: 64px;
+}
+
+.room-button-list {
+    margin-top: 28px;
 }
 }       
 
@@ -115,6 +120,10 @@
     .room-desc {
         width: 355px;
     }
+
+        .room-button-list {
+            margin-top: 40px;
+        }
 }
 
 @media screen and (min-width:1440px) {
