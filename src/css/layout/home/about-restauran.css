@@ -27,6 +27,24 @@
     margin-bottom: 32px;
 }
 
+.resto-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    min-width: 128px;
+    min-height: 34px;
+    background-color: transparent;
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+
+    transition: var(--animation-btn);
+}
+
 .resto-button {
     font-weight: 400;
     font-size: 14px;
@@ -36,14 +54,16 @@
     min-width: 128px;
     min-height: 34px;
     background-color: transparent;
-    border: 0.8px solid --primary-text-color;
+    border: 0.8px solid #121212;
     border-radius: 32px;
 
     transition: var(--animation-btn);
 }
 
 .resto-button:hover,
-.resto-button:focus {
+.resto-button:focus,
+.resto-link:hover,
+.resto-link:focus {
     background-color: var(--secondary-background-color);
     color: #F7F7F7;
 }
