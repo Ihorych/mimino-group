@@ -70,15 +70,18 @@
   border: none;
   cursor: pointer;
 }
+.room-hero_section {
+  background-color: var(--secondary-text-color);
+}
 .overflow-room {
   overflow: hidden;
 }
 @media screen and (min-width: 1440px) {
   .overflow-room {
+    height: 692px;
     position: relative;
   }
 }
-
 .room-hero_slider {
   display: flex;
   gap: 20px;
@@ -96,6 +99,8 @@
     top: 0;
     right: 0;
     transform: translate(50%);
+    margin-top: 30px;
+    max-height: 580px;
   }
 }
 .slider-img {
@@ -121,7 +126,7 @@
 }
 @media screen and (min-width: 1440px) {
   .title-cont {
-    margin-top: 120px;
+    margin-top: 169px;
     margin-bottom: 0;
   }
 }
@@ -139,7 +144,7 @@
   .svg-slider_wrap {
     position: absolute;
     left: 53%;
-    padding-top: 16px;
+    bottom: 6%;
     margin-top: 0;
   }
 }
@@ -155,7 +160,8 @@
 @media screen and (min-width: 1440px) {
   .luxury-text-cont {
     width: 289px;
-    margin-top: 217px;
+    margin-top: 178px;
+    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) {
