@@ -144,7 +144,7 @@
   .svg-slider_wrap {
     position: absolute;
     left: 53%;
-    bottom: 6%;
+    bottom: -2%;
     margin-top: 0;
   }
 }
