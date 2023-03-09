@@ -19,67 +19,80 @@
     
     <script type="module" crossorigin src="/mimino-group/assets/modals-7ae64c72.js"></script>
     <script type="module" crossorigin src="/mimino-group/assets/module-f232bd41.js"></script>
-    <link rel="stylesheet" href="/mimino-group/assets/modals-8d4d66d0.css">
+    <link rel="stylesheet" href="/mimino-group/assets/modals-34917ce4.css">
   </head>
   <body>
     <div class="modal modal-room" data-modal="2">
+  <button type="button">
     <svg class="js-modal-close modal-icon-close" width="28" height="28">
-        <use href="../img/icons/icons.svg.svg#icon-x-close">
-        </use>
+      <use href="../img/icons/icons.svg.svg#icon-x-close"></use>
     </svg>
-    <strong class="modal-room-title">BOOK A <span class="modal-room-title-italic">room</span></strong>
-    
-    <form class="modal-room-form">
-        <ul class="modal-room-list">
-            <li class="modal-room-item">
-                <label class="modal-room-label">
-                <input class="modal-room-input" type="text"
-                name="user-name"
-                value="Your name"
-                >
-                Who should book a room for?
-            </label></li>
+  </button>
+  <strong class="modal-room-title"
+    >BOOK A <span class="modal-room-title-italic">room</span></strong
+  >
 
-            <li class="modal-room-item"><label class="modal-room-label">
-                <input class="modal-room-input" type="tel"
-                name="user-number"
-                value="+38 ()"
-                pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                >
-                Phone number
-            </label></li>
-            
-            <li class="modal-room-item"><label class="modal-room-label">
-                <input class="modal-room-input" 
-                type="text"
-                name="user-checkin"
-                value="Today"
-                >
-                Check-in date
-            </label></li>
+  <form class="modal-room-form">
+    <ul class="modal-room-list">
+      <li class="modal-room-item">
+        <label class="modal-room-label">
+          <input
+            class="modal-room-input"
+            type="text"
+            name="user-name"
+            placeholder="Your name"
+          />
+          Who should book a table for?
+        </label>
+      </li>
+      <li class="modal-room-item">
+        <label class="modal-room-label">
+          <input
+            data-phone-pattern=""
+            class="modal-room-input"
+            type="tel"
+            name="user_phone"
+            required=""
+            title="(0xx)-xxx-xx-xx"
+            placeholder="+ 38 ()"
+          />
+        </label>
+        <span class="first-form-text">Phone number</span>
+      </li>
 
-            <li class="modal-room-item"><label class="modal-room-label">
-                <input class="modal-room-input" type="text"
-                name="user-check-out"
-                value="25/04/2023"
-                >
-                Check-out date
-            </label></li>
-            
-            <li class="modal-room-item modal-room-label-margin"><label class="modal-room-label ">
-                <input class="modal-room-input" type="text"
-                name="user-category"
-                value="Double suite"
-                >
-                Number category
-            </label></li>
-        </ul>
-        <div class="wrapper-btn-modal-reserve">
-            <button class="room-menu-btn modal-btn-room-reservation" type="submit">MAKE A RESERVATION</button>
-        </div>
-        
-    </form>
- </div>
+      <li class="modal-room-item">
+        <select class="modal-room-input" name="user-checkin">
+          <option value="Today">Today</option>
+          <option value="Tomorrow">Tomorrow</option>
+        </select>
+        <span class="first-form-text">Check-in date</span>
+      </li>
+
+      <li class="modal-room-item">
+        <select class="modal-room-input" name="user-check-out">
+          <option value="25/04/2023">25/04/2023</option>
+          <option value="26/04/2023">26/04/2023</option>
+        </select>
+        <span class="first-form-text">Check-out date</span>
+      </li>
+
+      <li class="modal-room-item">
+        <select class="modal-room-input" name="user-category">
+          <option value="Double suite">DOUBLE LUXURY ROOM</option>
+          <option value="Double suite">Triple Room</option>
+          <option value="Double suite">four-seater room</option>
+        </select>
+        <span class="first-form-text">Number category</span>
+      </li>
+    </ul>
+    <div class="wrapper-btn-modal-reserve">
+      <button class="room-menu-btn modal-btn-room-reservation" type="submit">
+        MAKE A RESERVATION
+      </button>
+    </div>
+  </form>
+</div>
+
 
     <header class="dark-header">
   <div class="dark-header-container container">
