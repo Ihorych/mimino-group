@@ -33,7 +33,7 @@ gap: 32px;} */
  @media screen and (min-width:768px) {
 .section-main-page-welcome {padding-bottom: 80px; padding-top: 80px;}
 .container-main-page-welcome {padding-top: 0px; padding-bottom: 0px;}
-.list-main-page-welcome {display: flex;
+.descr-main-page-welcome {display: flex;
 flex-direction: row;
 }
 .text-main-page-welcome.room {max-width: 367px;}
@@ -57,7 +57,7 @@ flex-direction: row;
 
 .welcome {display: flex; flex-direction: column;}
 
-.descr-main-page-welcome {margin-bottom: 0px;}
+.descr-main-page-welcome {margin-bottom: 0px; flex-direction: column;}
 
 .container-main-page-welcome {
     display: flex;
