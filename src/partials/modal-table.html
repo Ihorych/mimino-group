@@ -1,64 +1,71 @@
-
- <div class="modal modal-table" data-modal="1">
+<div class="modal modal-table" data-modal="1">
   <svg class="js-modal-close modal-icon-close" width="28" height="28">
-      <use href="../img/icons/icons.svg.svg#icon-x-close">
-      </use>
+    <use href="/img/icons/icons.svg.svg#icon-x-close"></use>
   </svg>
-  <strong class="modal-room-title">BOOK A <span class="modal-room-title-italic">table</span></strong>
-  
+  <strong class="modal-room-title"
+    >BOOK A <span class="modal-room-title-italic">table</span></strong
+  >
+
   <form class="modal-table-form">
-      <ul class="modal-table-list">
+    <ul class="modal-table-list">
+      <li class="modal-table-item">
+        <label class="modal-table-label">
+          <input
+            class="modal-table-input"
+            type="text"
+            name="user-name"
+            value="Your name"
+          />
+          Who should book a table for?
+        </label>
+      </li>
 
-          <li class="modal-table-item">
-              <label class="modal-table-label">
-              <input class="modal-table-input" type="text"
-              name="user-name"
-              value="Your name"
-              >
-              Who should book a table for?
-          </label></li>
+      <li class="modal-table-item">
+        <label class="modal-table-label">
+          <select class="modal-table-input" name="quantity" id="quantity">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          Number of people
+        </label>
+      </li>
 
-          <li class="modal-table-item">
-            <label class="modal-table-label">
-              <select class="modal-table-input"
-              name="quantity" 
-              id="quantity"
-              >
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              </select>
-              Number of people
-            </label>
-          </li>
+      <li class="modal-table-item">
+        <label class="modal-table-label">
+          <input
+            class="modal-table-input"
+            type="text"
+            name="user-checkin"
+            value="Today"
+          />
+          What date to book?
+        </label>
+      </li>
 
-          <li class="modal-table-item">
-            <label class="modal-table-label">
-              <input class="modal-table-input" 
-              type="text"
-              name="user-checkin"
-              value="Today"
-              >
-              What date to book?
-          </label></li>
-
-          <li class="modal-table-item">
-            <label class="modal-table-label">
-              <input class="modal-table-input" type="tel"
-              name="user-number"
-              value="+38 ()"
-              pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-              >
-              Phone number
-            </label>
-          </li>
-        </ul>
-      <div class="wrapper-btn-modal-reserve">
-          <button class="room-menu-btn modal-btn-table-reservation table-menu-btn" type="submit">MAKE A RESERVATION</button>
-      </div>
-      
+      <li class="modal-table-item">
+        <label class="modal-table-label">
+          <input
+            class="modal-table-input"
+            type="tel"
+            name="user-number"
+            value="+38 ()"
+            pattern="\+38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+          />
+          Phone number
+        </label>
+      </li>
+    </ul>
+    <div class="wrapper-btn-modal-reserve">
+      <button
+        class="room-menu-btn modal-btn-table-reservation table-menu-btn"
+        type="submit"
+      >
+        MAKE A RESERVATION
+      </button>
+    </div>
   </form>
 </div>
