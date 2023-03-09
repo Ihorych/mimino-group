@@ -10,6 +10,7 @@
   z-index: 999;
 
   transform: translateX(120%);
+  transition: var(--animation-btn);
 }
 
 .menu-container.is-open {
