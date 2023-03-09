@@ -1,9 +1,13 @@
 .overflow-hotel {
   overflow: hidden;
 }
+.hero-hotel_section {
+  background-color: var(--secondary-text-color);
+}
 @media screen and (min-width: 1440px) {
   .overflow-hotel {
     position: relative;
+    height: 692px;
   }
 }
 .hero-hotel_title {
@@ -155,8 +159,8 @@
   .hotel-slide_svg {
     position: absolute;
     left: 53%;
+    bottom: 6%;
     margin-top: 0;
-    padding-top: 16px;
   }
 }
 .slider-svg_hotel {
@@ -195,6 +199,7 @@
 }
 @media screen and (min-width: 1440px) {
   .hotel-text-cont {
-    margin-top: 248px;
+    margin-top: 213px;
+    margin-bottom: 48px;
   }
 }

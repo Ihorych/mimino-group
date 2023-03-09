@@ -7,11 +7,13 @@ body {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
 }
 
 :root {
   --primary-text-color: #121212;
   --secondary-text-color: #f6f6f6;
+  --main-txt-color: #f7f7f7;
   --primary-background-color: #f7f7f7;
   --secondary-background-color: #121212;
   --white-base: #ffffff;
