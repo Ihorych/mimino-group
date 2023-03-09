@@ -73,6 +73,11 @@
 .room-hero_section {
   background-color: var(--primary-background-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .room-hero_section {
+    padding-bottom: 80px;
+  }
+}
 .overflow-room {
   overflow: hidden;
 }
@@ -149,12 +154,14 @@
   }
 }
 .luxury-text-cont {
-  margin-top: 40px;
+  margin-top: 51px;
+  margin-bottom: 64px;
 }
 @media screen and (min-width: 768px) {
   .luxury-text-cont {
     width: 289px;
     margin-top: 0;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1440px) {
