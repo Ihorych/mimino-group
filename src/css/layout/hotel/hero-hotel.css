@@ -2,7 +2,7 @@
   overflow: hidden;
 }
 .hero-hotel_section {
-  background-color: var(--secondary-text-color);
+  background-color: var(--primary-background-color);
 }
 @media screen and (min-width: 1440px) {
   .overflow-hotel {

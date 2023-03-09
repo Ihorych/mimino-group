@@ -71,7 +71,7 @@
   cursor: pointer;
 }
 .room-hero_section {
-  background-color: var(--secondary-text-color);
+  background-color: var(--primary-background-color);
 }
 .overflow-room {
   overflow: hidden;
