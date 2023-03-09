@@ -19,7 +19,7 @@ justify-content: space-between;
 }
 .dark-header{
 border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
-
+background-color: white;
 }
 
 .menu-toggle {
@@ -50,14 +50,20 @@ stroke: var(--primary-text-color);
 flex-direction: column;
 justify-content: center;
 align-items: center;
- margin-left: 83px;
+ margin-left: 130px;
 gap: 3px;
 min-height: 38px;
   min-width: 112px;
  }
  @media screen and (min-width:768px){
   .logo{
+  margin-left: 100px; 
+ }
+ }
+  @media screen and (min-width:1440px){
+  .logo{
   margin-left: 0; 
+
  }
  }
  .dark-logo-title{
