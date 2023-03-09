@@ -60,7 +60,7 @@
 }
 
 .uppertitle {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   font-style: italic;
   color: var(--secondary-text-color);
@@ -68,8 +68,14 @@
   margin-bottom: 32px;
 }
 
+@media screen and (min-width: 767px) {
+  .uppertitle {
+    font-size: 24px;
+  }
+}
+
 .price-service {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--secondary-text-color);
   padding-bottom: 8px;
@@ -78,9 +84,15 @@
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 767px) {
+  .price-service {
+    font-size: 18px;
+  }
+}
+
 .second-title {
   display: flex;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   color: var(--restauran-menu-text);
   text-transform: none;
@@ -91,6 +103,7 @@
 @media screen and (min-width: 767px) {
   .second-title {
     max-width: 345px;
+    font-size: 12px;
   }
 }
 
@@ -130,12 +143,24 @@
   color: #d8d7d7;
   display: block;
   margin-left: auto;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 767px) {
+  .dish-size {
+    font-size: 14px;
+  }
 }
 
 .price {
   color: var(--secondary-text-color);
-  font-size: 18px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 767px) {
+  .price {
+    font-size: 18px;
+  }
 }
 
 .price-block-list {
