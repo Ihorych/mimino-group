@@ -1,35 +1,35 @@
-$('.hero-slider').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+$('.slider-container').slick({
+  infinite: false, //* безкінечний скрол
+  speed: 300, //* швидкість анімації скролу
+  slidesToScroll: 1, //* кількість карнинок при скролі
+  // slidesToShow: 4,      //* кількість елементів
+  // autoplay: true, //* автоскрол
+  autoplaySpeed: 2000, //* період автоскролу
+  variableWidth: true, //* своя ширина
+
+  prevArrow: $('.slider-btn-prev'),
+  nextArrow: $('.slider-btn-next'),
+  /* arrow: true, */
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1440,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
+        variableWidth: false,
         slidesToShow: 2,
-        slidesToScroll: 2,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        variableWidth: false,
+        slidesToShow: 2,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+    {
+      breakpoint: 375,
+      settings: {
+        variableWidth: true,
+      },
+    },
   ],
 });
